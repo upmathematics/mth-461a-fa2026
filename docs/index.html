@@ -1,0 +1,1930 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="generator" content="pandoc" />
+
+    
+    
+    <title>MTH-461: Probability and Statistics I</title>
+
+        <script src="site_libs/header-attrs-2.31/header-attrs.js"></script>
+        <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="site_libs/bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+        <script src="site_libs/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+        <script src="site_libs/navigation-1.1/tabsets.js"></script>
+        <link href="site_libs/readthedown-0.1/readthedown.css" rel="stylesheet" />
+        <link href="site_libs/readthedown-0.1/readthedown_fonts_embed.css" rel="stylesheet" />
+        <script src="site_libs/readthedown-0.1/readthedown.js"></script>
+    
+    
+    
+        <link rel="stylesheet" href="css/custom.css" type="text/css" />
+    
+    <!-- tabsets -->
+    <script>
+      $(document).ready(function () {
+	  window.buildTabsets("toc");
+      });
+      $(document).ready(function () {
+	  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+	      $(this).parent().toggleClass('nav-tabs-open')
+	  });
+      });
+    </script>
+
+    <!-- code folding -->
+    
+    <!-- code download -->
+    
+    <!-- tabsets dropdown -->
+
+    <style type="text/css">
+      .tabset-dropdown > .nav-tabs {
+	  display: inline-table;
+	  max-height: 500px;
+	  min-height: 44px;
+	  overflow-y: auto;
+	  background: white;
+	  border: 1px solid #ddd;
+	  border-radius: 4px;
+      }
+      
+      .tabset-dropdown > .nav-tabs > li.active:before {
+	  content: "";
+	  font-family: 'Glyphicons Halflings';
+	  display: inline-block;
+	  padding: 10px;
+	  border-right: 1px solid #ddd;
+      }
+      
+      .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+	  content: "&#xe258;";
+	  border: none;
+      }
+      
+      .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+	  content: "";
+	  font-family: 'Glyphicons Halflings';
+	  display: inline-block;
+	  padding: 10px;
+	  border-right: 1px solid #ddd;
+      }
+      
+      .tabset-dropdown > .nav-tabs > li.active {
+	  display: block;
+      }
+
+      .tabset-dropdown > .nav-tabs > li.active a {
+  	  padding: 0 15px !important;
+      }
+
+      .tabset-dropdown > .nav-tabs > li > a,
+      .tabset-dropdown > .nav-tabs > li > a:focus,
+      .tabset-dropdown > .nav-tabs > li > a:hover {
+	  border: none;
+	  display: inline-block;
+	  border-radius: 4px;
+	  background-color: transparent;
+      }
+      
+      .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+	  display: block;
+	  float: none;
+      }
+      
+      .tabset-dropdown > .nav-tabs > li {
+	  display: none;
+	  margin-left: 0 !important;
+      }
+    </style>
+    
+</head>
+
+<body class="preload">
+
+   	
+         <!-- readthedown start -->   
+   <div id="content" data-toggle="wy-nav-shift">
+     <nav id="nav-top" role="navigation" aria-label="top navigation">
+       <a role="button" href="#" data-toggle="wy-nav-top"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
+     </nav>
+         
+   
+        
+      <h1 class="title">MTH-461: Probability and Statistics I</h1>
+         <h1 class="subtitle"><div class="line-block">Section A<br />
+Fall 2026<br />
+Department of Mathematics<br />
+University of Portland</div></h1>
+   
+         <!-- readthedown authors -->
+   <div id="sidebar">
+    <h2><a href="#content">MTH-461: Probability and Statistics
+I</a></h2>
+    <div id="toc">
+      <ul>
+      <li><a href="#syllabus" id="toc-syllabus">Syllabus</a>
+      <ul>
+      <li><a href="#about-the-class"
+      id="toc-about-the-class"><strong>About the Class</strong></a></li>
+      <li><a href="#communication-tools"
+      id="toc-communication-tools"><strong>Communication
+      Tools</strong></a></li>
+      <li><a href="#assignment-tools"
+      id="toc-assignment-tools"><strong>Assignment
+      Tools</strong></a></li>
+      <li><a href="#learning-goals"
+      id="toc-learning-goals"><strong>Learning Goals</strong></a></li>
+      <li><a href="#academic-support"
+      id="toc-academic-support"><strong>Academic
+      Support</strong></a></li>
+      <li><a href="#assessment"
+      id="toc-assessment"><strong>Assessment</strong></a></li>
+      <li><a href="#assignments"
+      id="toc-assignments"><strong>Assignments</strong></a></li>
+      <li><a href="#academic-integrity"
+      id="toc-academic-integrity"><strong>Academic
+      Integrity</strong></a></li>
+      <li><a href="#other-expectations"
+      id="toc-other-expectations"><strong>Other
+      Expectations</strong></a></li>
+      </ul></li>
+      <li><a href="#materials" id="toc-materials">Materials</a>
+      <ul>
+      <li><a href="#topics-schedule"
+      id="toc-topics-schedule"><strong>Topics Schedule</strong></a></li>
+      <li><a href="#class-readings" id="toc-class-readings">Class
+      Readings</a></li>
+      <li><a href="#books-online-resources-lists"
+      id="toc-books-online-resources-lists">Books &amp; Online Resources
+      Lists</a></li>
+      </ul></li>
+      </ul>
+    </div>
+    <div id="postamble" data-toggle="wy-nav-shift" class="status">
+                  <p class="author"><span class="glyphicon glyphicon-user"></span> <div
+class="line-block">Dr. <a href="https://www.alexjohnquijano.com"
+target="_blank">Alex John Quijano</a> <a
+href="https://creativecommons.org/licenses/by/4.0/"
+target="_blank">CC-BY 4.0</a><br />
+Department of Mathematics<br />
+University of Portland<br />
+<br />
+Made with <a href="https://cran.r-project.org/" target="_blank">R</a>
+and <a href="https://rmarkdown.rstudio.com/"
+target="_blank">RMarkdown</a><br />
+Last updated on August 19, 2026</div></p>
+                      </div>
+   </div>
+     
+
+   
+      
+   
+<!-- Don't indent these lines or it will mess pre blocks indentation --> 
+<div id="main">
+<div id="syllabus" class="section level1">
+<h1>Syllabus</h1>
+<div id="about-the-class" class="section level2">
+<h2><strong>About the Class</strong></h2>
+<div id="description" class="section level3">
+<h3>Description</h3>
+<p>This course is an introduction to the fundamental theory of
+probability and common statistical methods. Topics include basic and
+conditional probability, random variables, probability functions,
+expectation, variance, moment generating functions, common and uncommon
+probability distributions. Additional topics may include random
+sampling, estimation, and an introduction to Markov Chains.</p>
+</div>
+<div id="instructor-information" class="section level3">
+<h3>Instructor Information</h3>
+<blockquote>
+<ul>
+<li>Instructor: Dr. Alex John Quijano</li>
+<li>Office: Buckley Center 279</li>
+</ul>
+</blockquote>
+</div>
+<div id="lectures-and-discussions" class="section level3">
+<h3>Lectures and Discussions</h3>
+<p>This course meets on Mondays, Tuesdays, and Fridays. The typical
+class routine will include pre-reading assignments before each class,
+followed by a short lecture or demonstration, worksheet activities,
+group presentations, and discussions.</p>
+<blockquote>
+<p>The course schedule and location is:</p>
+<ul>
+<li><strong>Section A:</strong> MWF 1:35 PM - 2:30 PM, Dundun-Berchtold
+235</li>
+</ul>
+</blockquote>
+</div>
+<div id="textbook" class="section level3">
+<h3>Textbook</h3>
+<p>This course uses the following textbook —which is free to access— for
+reading and practice.</p>
+<blockquote>
+<ul>
+<li>Blitzstein JK, Hwang J (2019). <em>Introduction to probability</em>,
+2nd, edition. Chapman and Hall/CRC. <a
+href="http://probabilitybook.net/"
+class="uri">http://probabilitybook.net/</a>.</li>
+</ul>
+</blockquote>
+</div>
+<div id="credit-hours-and-prerequisites" class="section level3">
+<h3>Credit Hours and Prerequisites</h3>
+<ul>
+<li>Credit hours: 3</li>
+<li>Prerequisites: MTH 202 (Calculus II) and MTH 311 (Discrete
+Structures) with a grade of C- or higher or permission of the
+instructor.</li>
+</ul>
+<p><br></p>
+</div>
+</div>
+<div id="communication-tools" class="section level2">
+<h2><strong>Communication Tools</strong></h2>
+<div id="canvas" class="section level3">
+<h3>Canvas</h3>
+<p>The syllabus, tentative topics schedule, and other information are
+posted on <a href="https://portland.instructure.com/"
+target="_blank">Canvas</a>. We will be using Canvas as the main
+real-time communication tool for general announcements,
+question-answering discussions, and direct messages.</p>
+<blockquote>
+<p>You can access this course’s Canvas Home page at <a
+href="https://portland.instructure.com/courses/1651"
+target="_blank">MTH-461 A</a>. You are already listed in Canvas for this
+course using your UP account.</p>
+</blockquote>
+</div>
+<div id="email" class="section level3">
+<h3>Email</h3>
+<p>My UP email is <a href="mailto:quijano@up.edu"
+class="email">quijano@up.edu</a>.</p>
+<blockquote>
+<p>If you prefer communicating through email, note that I have set up an
+email filter for this course, and you should put the “MTH 321” keyword
+in your subject line.</p>
+</blockquote>
+<p>It is easy for me to get notice of your email if you put the keyword
+in the subject line. Concise and specific messages are helpful, so I
+know how I can best help you.</p>
+<p><br></p>
+</div>
+</div>
+<div id="assignment-tools" class="section level2">
+<h2><strong>Assignment Tools</strong></h2>
+<div id="canvas-1" class="section level3">
+<h3>Canvas</h3>
+<p>We will be using Canvas for posting/submitting assignments and giving
+feedback.</p>
+<blockquote>
+<p>You can access this course’s Canvas Assignments page at <a
+href="https://portland.instructure.com/courses/1651/assignments"
+target="_blank">Mth-461 A - Assignments</a>.</p>
+</blockquote>
+</div>
+<div id="posit-cloud" class="section level3">
+<h3>Posit Cloud</h3>
+<p>We will be using the Python and R programming languages as a
+computational tool for some assignments. This tool is free and
+open-source. We will use the Posit Cloud service.</p>
+<ul>
+<li><p><a href="https://login.posit.cloud/login?redirect=%2F"
+target="_blank">Posit Cloud</a> is an online computing environment that
+supports computations in Python.</p></li>
+<li><p><a href="https://www.python.org/" target="_blank">Python</a> is a
+powerful language for mathematical computing, widely used for symbolic
+algebra, numerical analysis, data visualization, and building custom
+models.</p></li>
+<li><p><a href="https://jupyter.org/" target="_blank">Jupyter</a> is an
+interactive computing environment that lets you combine live code, math,
+visualizations, and narrative text for exploring, documenting, and
+sharing mathematical analyses and simulations.</p></li>
+<li><p><a href="https://www.r-project.org/" target="_blank">R</a> is a
+programming language and environment used for statistical analysis, data
+visualization, and data-driven research.</p></li>
+<li><p><a href="https://posit.co/download/rstudio-desktop/"
+target="_blank">R Studio</a> is an environment that makes it easier to
+write, run, and manage R code for data analysis and
+visualization.</p></li>
+</ul>
+<blockquote>
+<p>Create a free account at <a
+href="https://login.posit.cloud/register?redirect=%2F"
+target="_blank">Posit Cloud Sign-Up</a> using your UP email. Note that
+you must use your UP email for me to add you into the course’s workspace
+in Posit Cloud. You will receive an email inviting you into the
+workspace at the first week of the semester.</p>
+</blockquote>
+<p>If you’d like to set up Python and R on your own computer, start by
+installing <a href="https://www.python.org/" target="_blank">Python</a>
+and <a href="https://cran.r-project.org/" target="_blank">R</a>, then
+install <a href="https://jupyter.org/" target="_blank">Jupyter</a> and
+<a href="https://posit.co/download/rstudio-desktop/" target="_blank">R
+Studio</a> to run and share code interactively. Feel free to reach out
+if you’d like help with any step!</p>
+<blockquote>
+<p>Python and R instructions and materials will be provided ad hoc.</p>
+</blockquote>
+<p><br></p>
+</div>
+</div>
+<div id="learning-goals" class="section level2">
+<h2><strong>Learning Goals</strong></h2>
+<div id="learning-outcomes" class="section level3">
+<h3>Learning Outcomes</h3>
+<p>Upon completion of the course, you will be able to:</p>
+<ul>
+<li>Understand the basic concepts of probability.</li>
+<li>Understand the basic concepts of conditional probability and
+independence.</li>
+<li>Identify discrete and continuous random variables.</li>
+<li>Define random variables and their associated probability
+distributions.</li>
+<li>Apply probability concepts to model uncertainty in real-world
+processes.</li>
+<li>Solve common probability problems.</li>
+<li>Analyze probability distributions and sampling variability for
+statistical inference.</li>
+<li>Write clear and concise mathematical solutions to probability
+problems.</li>
+<li>Communicate effectively about probability with other students,
+instructors, and professionals.</li>
+<li>Work independently and as part of a team to solve probability
+problems.</li>
+<li>Effectively use technology to support the analysis and solution of
+probability problems.</li>
+</ul>
+</div>
+<div id="learning-objectives" class="section level3">
+<h3>Learning Objectives</h3>
+<p>The following learning objectives are designed to build on one
+another, with some overlap. The goal is to help you achieve proficiency
+in these areas.</p>
+<table>
+<colgroup>
+<col width="28%" />
+<col width="71%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left"><strong>Topic Category</strong></th>
+<th align="left"><strong>Learning Objectives</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><strong>Basic Probability</strong></td>
+<td align="left"><span class="math inline">\(\rightarrow\)</span>
+Describe and interpret sample spaces and events.<br><span
+class="math inline">\(\rightarrow\)</span> Describe basic probability
+rules.<br><span class="math inline">\(\rightarrow\)</span> Solve
+probability problems using basic rules.</td>
+</tr>
+<tr class="even">
+<td align="left"><strong>Conditional Probability</strong></td>
+<td align="left"><span class="math inline">\(\rightarrow\)</span>
+Describe and interpret dependent events.<br><span
+class="math inline">\(\rightarrow\)</span> Distinguish between dependent
+and independent events.<br><span
+class="math inline">\(\rightarrow\)</span> Describe and interpret
+conditional probability rules.<br><span
+class="math inline">\(\rightarrow\)</span> Describe and interpret Bayes’
+theorem<br><span class="math inline">\(\rightarrow\)</span> Solve
+conditional probability problems using basic rules and Bayes’
+theorem.</td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>Random Variables</strong></td>
+<td align="left"><span class="math inline">\(\rightarrow\)</span>
+Describe and interpret a discrete/continuous random variable.<br><span
+class="math inline">\(\rightarrow\)</span> Describe and interpret random
+variables from a given sampling scenario.<br><span
+class="math inline">\(\rightarrow\)</span> Explain the connection
+between random variables and probability functions.</td>
+</tr>
+<tr class="even">
+<td align="left"><strong>Probability
+Functions/Distributions</strong></td>
+<td align="left"><span class="math inline">\(\rightarrow\)</span>
+Describe and interpret probability Distributions.<br><span
+class="math inline">\(\rightarrow\)</span> Compute the expected value
+and variance of random variables given their probability
+functions.<br><span class="math inline">\(\rightarrow\)</span> Compute
+the moment generating functions of random variables.<br><span
+class="math inline">\(\rightarrow\)</span> Interpret the meaning of
+expectation, variance, and moments of random variables.<br><span
+class="math inline">\(\rightarrow\)</span> Solve problems using
+probability distributions.</td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>Joint Distributions</strong></td>
+<td align="left"><span class="math inline">\(\rightarrow\)</span>
+Construct and interpret joint probability distributions, including
+deriving marginal and conditional distributions.<br><span
+class="math inline">\(\rightarrow\)</span> Determine independence
+between random variables and evaluate association using covariance and
+correlation.<br><span class="math inline">\(\rightarrow\)</span> Apply
+joint distributions to compute expectations and variances of multiple
+random variables.</td>
+</tr>
+<tr class="even">
+<td align="left"><strong>Random Processes</strong></td>
+<td align="left"><span class="math inline">\(\rightarrow\)</span> Apply
+sampling methods (with and without replacement) to model random
+selection and estimate associated probabilities.<br><span
+class="math inline">\(\rightarrow\)</span> Analyze fundamental random
+processes, including, random walks, Brownian motion, and Poisson
+process, and describe their defining properties.<br><span
+class="math inline">\(\rightarrow\)</span> Describe and interpret Markov
+chains, including transition matrices and the Markov property, as an
+introduction to modeling sequential dependence.</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+</div>
+</div>
+<div id="academic-support" class="section level2">
+<h2><strong>Academic Support</strong></h2>
+<div id="help-hours" class="section level3">
+<h3>Help Hours</h3>
+<blockquote>
+<p>Dr. Alex John Quijano</p>
+<ul>
+<li>Walk-in Monday to Thursday at 4:00 PM, Buckley Center 279</li>
+<li><a
+href="https://outlook.office.com/bookwithme/user/563068e7b8f84361b7e7eaf55bc932d8@up.edu/meetingtype/KXqoHwKuE0qdlfS1AiumEg2?anonymous&amp;ismsaljsauthenabled&amp;ep=mLinkFromTile"
+target="_blank">One-to-One, Buckley Center 279</a> <br><em>Click on the
+link to sign-up for a 15-minute session.</em></li>
+</ul>
+</blockquote>
+<p>My walk-in and by-appointment help hours begin in Week 2. If you need
+more than 15 minutes for a one-to-one help hour by-appointment, you can
+book at most two consecutive sessions.</p>
+<p>If no one show up in the first 30 minutes of my walk-in help hours,
+the walk-in help hours will end.</p>
+</div>
+<div id="the-learning-commons" class="section level3">
+<h3>The Learning Commons<span class="math inline">\(^*\)</span></h3>
+<p>Students may receive academic assistance through Learning Commons
+tutoring services and workshops. The Co-Pilot peer tutoring program
+provides students with opportunities to work with other students to get
+help in writing, math, group projects, and many other courses. Schedule
+an appointment to meet with a Co-Pilot (tutor) by visiting the Learning
+Commons website (<a href="www.up.edu/learningcommons"
+target="_blank">www.up.edu/learningcommons</a>). Students can also meet
+with a Co-Pilot during drop-in hours. Check the Learning Commons website
+or stop by the Learning Commons in BC 163 to learn more about their
+services. Co-Pilots are a wonderful support along your academic
+journey.</p>
+</div>
+<div id="math-resource-center" class="section level3">
+<h3>Math Resource Center</h3>
+<p>Appointment-based tutoring accepts appointments starting week 1 and
+sessions start week 2. Visit the <a
+href="https://www.up.edu/learningcommons/tutoring-services/math-resource-center/index.html"
+target="_blank">Math Resource Center</a> website to sign-up for an
+appointment. Drop-in tutoring is Monday to Thursday, 3:00 PM - 7:00 PM
+in BC 163 and starts week 2. Check the Math Resource Center website or
+drop by the center for more information.</p>
+</div>
+<div id="help-hours-guidelines" class="section level3">
+<h3>Help Hours Guidelines</h3>
+<p>It is strongly recommended that you attend the walk-in help hours or
+set up a one-to-one meeting with the me if you feel like you are falling
+behind during our in-person class activities, or if you just need to
+clarify concepts discussed in class. In order to be more productive
+during a one-to-one meeting (or the walk-in help hours), these are three
+recommendations before you come in:</p>
+<ul>
+<li>List all gaps in knowledge you have (missed concepts) or list all
+concepts that were unclear to you during class. We will address them one
+by one.</li>
+<li>Prepare questions you want answered and be ready to show relevant
+materials.</li>
+<li>Regarding assignments, prepare to show (a) what are the steps you
+have tried and (b) what are the errors you encountered and the
+strategies you have tried.</li>
+</ul>
+<p>Note that these are recommendations so that you can get the most out
+of the help hours allocated for you. If you just want to come in and
+chat about something else, feel free to do so. If the dedicated time for
+one-to-one meeting does not work for you, send me a message to set up an
+appointment.</p>
+</div>
+<div id="collaboration-policy" class="section level3">
+<h3>Collaboration Policy</h3>
+<p>I expect you to participate in the class through lectures, class
+activities, discussions, homework, and other engagements. I also expect
+you to make use of opportunities to get help outside of class (help
+hours, Teams, email, tutoring) if you need help. Concise and specific
+messages are the most helpful so I know how I can best help you.</p>
+<blockquote>
+<p>You are encouraged to participate in discussions with your peers
+regarding assignments. However, each student must take responsibility
+and ownership of their work and submit their work individually, except
+for group projects.</p>
+</blockquote>
+<p><br></p>
+</div>
+</div>
+<div id="assessment" class="section level2">
+<h2><strong>Assessment</strong></h2>
+<div id="assessment-disclosure-statement" class="section level3">
+<h3>Assessment Disclosure Statement<span
+class="math inline">\(^*\)</span></h3>
+<p>Student work products for this course may be used by the University
+for educational quality assurance purposes. For reasons of
+confidentiality, such examples will not include student names.</p>
+</div>
+<div id="standards-based-grading" class="section level3">
+<h3>Standards-Based Grading</h3>
+<p>Learning probability demands focus, rigorous examination of the
+concepts you have encountered, and a process of ongoing refinement and
+improvement. You will be assessed on your proficiency in solving a
+variety of probability problems, both graphically and analytically,
+using different methods. You will have opportunities to demonstrate your
+proficiency, revise your work, and reflect on your growth in solving a
+variety of probability problems.</p>
+<p>This course uses a standards-based grading system, which emphasizes
+mastery of specific learning objectives. This approach is more precise
+and motivating than traditional grading methods and fosters a more
+equitable learning environment. Key features of standards-based grading
+include:</p>
+<ul>
+<li>A clear focus on mastering defined learning objectives</li>
+<li>The use of diverse assessment methods to evaluate understanding</li>
+<li>Regular, detailed feedback to guide your progress</li>
+<li>Support in setting meaningful goals and tracking your growth</li>
+</ul>
+<p>This system prioritizes learning and personal development, enabling
+you to excel and reach your highest potential.</p>
+</div>
+<div id="general-marking-guide" class="section level3">
+<h3>General Marking Guide</h3>
+<p>Each assignment will be graded according to the general marking guide
+detailed below. You will be given feedback on your assignment and
+learning process to improve your performance. Note that each assignment
+has its own rubric guided by these general guidelines and the
+assignment’s learning objectives.</p>
+<p>Given the following marks, your work:</p>
+<table>
+<colgroup>
+<col width="27%" />
+<col width="72%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left"><strong>Mark</strong></th>
+<th align="left"><strong>Rubric Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><strong>Outstanding <br>(O)</strong></td>
+<td align="left">Shows perfect solution sets with key steps shown
+clearly and concisely; applies concepts/methods correctly and
+consistently across similar problems; includes complete and
+well-represented graphs/diagrams; and, when appropriate, may extend on
+applying concepts/methods to new situations.</td>
+</tr>
+<tr class="even">
+<td align="left"><strong>Excellent <br>(E)</strong></td>
+<td align="left">Shows near-perfect solution sets with key steps shown
+clearly and concisely; applies concepts/methods correctly and
+consistently across similar problems but with minor errors such as
+non-propagating algebraic mistakes, and incomplete or under-represented
+graphs/diagrams.</td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>Acceptable <br>(A)</strong></td>
+<td align="left">Shows approximate solutions sets with key steps shown
+clearly and concisely; applies concepts/methods correctly and
+consistently across similar problems but with major errors such as
+propagating algebraic mistakes, and incomplete or under-represented
+graphs/diagrams.</td>
+</tr>
+<tr class="even">
+<td align="left"><strong>Needs Improvement <br>(NI)</strong></td>
+<td align="left">Shows rough solution sets with key steps mostly shown
+comprehensibly; applies concepts/methods incorrectly or inconsistently
+across similar problems with major errors such as propagating algebraic
+mistakes, and incomplete or under-represented graphs/diagrams.</td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>Needs Major Improvement <br>(NMI)</strong></td>
+<td align="left">Shows rudimentary solution sets but with key steps
+mostly shown incomprehensibly; applies concepts/methods incorrectly and
+inconsistently across similar problems with major errors such as
+propagating algebraic mistakes, and incomplete or under-represented
+graphs/diagrams.</td>
+</tr>
+<tr class="even">
+<td align="left"><strong>Missing <br>(M)</strong></td>
+<td align="left">Shows incomplete or fully incomprehensible work.</td>
+</tr>
+</tbody>
+</table>
+<p>Note that these are categorical marks, not numerical scores.</p>
+</div>
+<div id="final-course-grades" class="section level3">
+<h3>Final Course Grades</h3>
+<table style="width:100%;">
+<colgroup>
+<col width="20%" />
+<col width="13%" />
+<col width="13%" />
+<col width="13%" />
+<col width="13%" />
+<col width="13%" />
+<col width="13%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left"><strong>Assignment</strong></th>
+<th align="center"><strong>Rank</strong></th>
+<th align="center"><strong>Mark</strong></th>
+<th align="center"><strong>A,A-</strong></th>
+<th align="center"><strong>B+,B,B-</strong></th>
+<th align="center"><strong>C+,C,C-</strong></th>
+<th align="center"><strong>D+,D,D-</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><strong>Exams</strong></td>
+<td align="center">1</td>
+<td align="center">O</td>
+<td align="center"><span class="math inline">\(\frac{3}{4}\)</span></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="center"></td>
+<td align="center">E</td>
+<td align="center">-</td>
+<td align="center"><span class="math inline">\(\frac{3}{4}\)</span></td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="center"></td>
+<td align="center">A</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><span class="math inline">\(\frac{2}{4}\)</span></td>
+<td align="center">-</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="center"></td>
+<td align="center">NI</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><span class="math inline">\(\frac{2}{4}\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>Homeworks</strong></td>
+<td align="center">2</td>
+<td align="center">O</td>
+<td align="center"><span class="math inline">\(\frac{6}{6}\)</span></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="center"></td>
+<td align="center">E</td>
+<td align="center">-</td>
+<td align="center"><span class="math inline">\(\frac{6}{6}\)</span></td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="center"></td>
+<td align="center">A</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><span class="math inline">\(\frac{5}{6}\)</span></td>
+<td align="center">-</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="center"></td>
+<td align="center">NI</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><span class="math inline">\(\frac{5}{6}\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>Worksheets</strong></td>
+<td align="center">3</td>
+<td align="center">Completed</td>
+<td align="center"><span
+class="math inline">\(\frac{34}{37}\)</span></td>
+<td align="center"><span
+class="math inline">\(\frac{30}{37}\)</span></td>
+<td align="center"><span
+class="math inline">\(\frac{26}{37}\)</span></td>
+<td align="center"><span
+class="math inline">\(\frac{23}{37}\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>The above table shows the fraction of given assignments. These
+fractions are minimum requirements for each letter grade category.
+Plus/minus letter grades will be determined by your overall coursework
+and your final exam.</p>
+<p>The ranking indicates the relative importance of each assignment:
+Rank 1 is the most important, and Rank 3 is the least. If the mark
+distribution across assignments varies for you, this ranking will be
+used to determine your final grade. There will also be optional
+assignments that you may complete to contribute additional credit within
+each assignment category.</p>
+<blockquote>
+<p>Each of you will receive an individual assignment marksheet in the
+middle of the semester to help you track your progress and current
+standing in the course. If you need more assistance on understanding
+your overall standing in this course, I encourage you to communicate
+with me directly.</p>
+</blockquote>
+<p><br></p>
+</div>
+</div>
+<div id="assignments" class="section level2">
+<h2><strong>Assignments</strong></h2>
+<div id="submission-guidelines" class="section level3">
+<h3>Submission Guidelines</h3>
+<blockquote>
+<p>You need to submit all assignments online through Moodle.</p>
+<ul>
+<li>Worksheets must be in a single <code>.pdf</code> file.</li>
+<li>Homework or Exams must be in a single <code>.pdf</code> file along
+with supplementary Python code (<code>.py</code> or <code>.ipynb</code>)
+if any.</li>
+</ul>
+</blockquote>
+<p>Your work must be labeled correctly and clearly written. Homework,
+worksheets, and exams can be electronically hand-written or typed but
+must be uploaded to Moodle as a single <code>.pdf</code> file. Here are
+additional submission rules:</p>
+<ul>
+<li>If you choose to handwrite your answers on paper, scan your document
+using a scanner app to ensure the text is clear. I recommend using the
+“Adobe Scan” app, which is available for both Android and iOS.</li>
+<li>If the assignment involves (or it requires you to show) a Python
+coding component, you must include all relevant Python code files that
+generated all outputs, plots, and analysis. Your Python code must be
+properly documented or with comments.</li>
+</ul>
+</div>
+<div id="worksheets" class="section level3">
+<h3>Worksheets</h3>
+<p>There will be worksheets every class day except for exam weeks. The
+purpose of the worksheets is for in-class group work and activities, and
+it will include instructions on how to use Python and/or R for
+Probability.</p>
+<blockquote>
+<p>You must submit your worksheet individually by end-of-class or
+end-of-day. Your name must exist in your worksheet and the names of your
+collaborators.</p>
+</blockquote>
+<p>Worksheets are marked mostly on completion, and partially on
+correctness. It will be marked either pass or fail, there will no
+detailed feedback on worksheets, and no opportunities for revisions and
+make-up.</p>
+</div>
+<div id="homeworks" class="section level3">
+<h3>Homeworks</h3>
+<p>Homeworks are assigned every Tuesday, except for exam days. The
+purpose of the homework is to provide practice with problems, and it
+will include tasks that involve Python.</p>
+<blockquote>
+<p>You must submit your homework individually by the prescribed
+deadline.</p>
+</blockquote>
+<p>Homeworks are marked using the general grading guide and will be
+returned with detailed feedback.</p>
+</div>
+<div id="homework-revisions" class="section level3">
+<h3>Homework Revisions</h3>
+<p>You can revise your homework for an up-grade, meaning -for example- a
+grade of “NI” can be up-graded to “A”.</p>
+<p>Here are the qualifications and requirements for homework
+revisions:</p>
+<ul>
+<li>A homework mark of “NMI”, “NI”, “A”, or “E”.</li>
+<li>The revised homework must be completed, meaning all parts should
+have your full written solutions.</li>
+<li>Homework marked with “M” is disqualified for revisions, but you can
+still use them as practice.</li>
+</ul>
+<p>Here are the rules for homework revisions:</p>
+<ul>
+<li>Homework revisions are accepted within one week of the homework
+being returned to you, otherwise the grade is set.</li>
+<li>You have one chance to revise your homework.</li>
+</ul>
+</div>
+<div id="exams" class="section level3">
+<h3>Exams</h3>
+<p>Exams are given in two parts which are in written and oral forms.
+Below are the description of each part of the exams.</p>
+<div id="written" class="section level4">
+<h4><strong>Written</strong></h4>
+<p>The written part of the exam allows you demonstrate your
+understanding of the material in written form. This part will be
+evaluated on the details of your computations and solutions.</p>
+<p>Written exams will be graded on 3 components:</p>
+<table>
+<colgroup>
+<col width="27%" />
+<col width="72%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="right"><strong>Written Component</strong></th>
+<th align="left"><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right"><strong>Methodology</strong></td>
+<td align="left">The appropriate method should be applied correctly and
+consistently across similar problems with shown understanding of the
+underlying principles.</td>
+</tr>
+<tr class="even">
+<td align="right"><strong>Reasoning</strong></td>
+<td align="left">The method should be explained in a clear and logical
+way with each key step justified and explained.</td>
+</tr>
+<tr class="odd">
+<td align="right"><strong>Writing</strong></td>
+<td align="left">The solution process should be written in a clear and
+concise way including key steps with appropriate mathematical notations
+along with complete and well represented graphs/diagrams.</td>
+</tr>
+</tbody>
+</table>
+<p>Here are the rules for the written part of the exams:</p>
+<ul>
+<li>Written exams are take-home exam and given Monday of an exam
+week.</li>
+<li>Written exams are due on your scheduled oral part of the exam.</li>
+<li>Late submissions are not accepted unless the instructor allows under
+extenuating circumstances.</li>
+</ul>
+</div>
+<div id="oral" class="section level4">
+<h4><strong>Oral</strong></h4>
+<p>The oral part of the exam allows you to demonstrate your
+understanding of the material verbally. It is administered mostly in
+dialog style during exam days. The oral exam lasts only ten to fifteen
+minutes and includes predetermined questions about problems from the
+written exam, which are provided to you ahead of time. This part will be
+evaluated on your ability to explain key concepts and navigate through
+different ways to solve problems, rather than detailed solutions.</p>
+<p>Oral exams will be graded on 3 components:</p>
+<table>
+<colgroup>
+<col width="27%" />
+<col width="72%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="right"><strong>Oral Component</strong></th>
+<th align="left"><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right"><strong>Knowledge</strong></td>
+<td align="left">The mathematical definitions and procedures should be
+recalled accurately and applied appropriately and consistently.</td>
+</tr>
+<tr class="even">
+<td align="right"><strong>Communication</strong></td>
+<td align="left">The underlying concepts should be explained clearly,
+concisely, and consistently using appropriate mathematical
+language.</td>
+</tr>
+<tr class="odd">
+<td align="right"><strong>Problem-solving</strong></td>
+<td align="left">The given problem should be critically identified,
+understood, and solved using the prescribed or unprescribed methods or
+strategies.</td>
+</tr>
+</tbody>
+</table>
+<p>Here are the rules for the oral part of the exams:</p>
+<ul>
+<li>You must sign-up for a time slot on an exam week 24 hours in
+advance.</li>
+<li>You must submit your written exam by the start of your scheduled
+oral exam.</li>
+<li>You may have all resources with you during the oral exam, that
+includes your notes, books, and online resources.</li>
+<li>You may not communicate with others during the exam except to
+me.</li>
+<li>You may not ask conceptual questions to me except for clarifying
+questions about the problem, and minor computations.</li>
+</ul>
+<p>The grade you will receive for exams are a breakdown of your written
+and oral exam results with detailed feedback.</p>
+<blockquote>
+<p>Here is how you can sign-up for the exam (oral part):</p>
+<ul>
+<li><a
+href="https://outlook.office.com/bookwithme/user/563068e7b8f84361b7e7eaf55bc932d8@up.edu/meetingtype/sshxbwNim0GYISvE5uA9Tw2?anonymous&amp;ismsaljsauthenabled&amp;ep=mLinkFromTile"
+target="_Blank">Probability and Statistics I Exam</a> <br> <em>Click on
+the link to sign-up for a 15-minute session.</em></li>
+</ul>
+</blockquote>
+</div>
+</div>
+<div id="exam-retakes" class="section level3">
+<h3>Exam Retakes</h3>
+<p>It is possible to retake an exam, This allows you to have your exam
+up-graded, meaning -for example- a grade of “NI” can be up-graded to
+“A”.</p>
+<p>The same exam guidelines are applied to the retakes with the only
+difference is that during the oral part of the exam retake:</p>
+<ul>
+<li>You need to provide your revised version of the written part.</li>
+<li>You need to provide a short discussion explaining what was revised
+and what you learned from the revision process.</li>
+</ul>
+<p>Here are the qualifications for exam retakes:</p>
+<ul>
+<li>An exam grade of “NMI”, NI”, “A”, or “E”.</li>
+<li>The revised exam must be completed, meaning all parts should have
+your full written solutions. Incomplete work is disqualified for a
+retake.</li>
+</ul>
+<p>Here are the rules for exam retakes:</p>
+<ul>
+<li>Any exam retake must occur within one week of its return. After this
+period, the mark is final.</li>
+<li>You have one chance to retake an exam.</li>
+</ul>
+<blockquote>
+<p>Here is how you can sign-up for the exam (oral part) retakes:</p>
+<ul>
+<li><a
+href="https://outlook.office.com/bookwithme/user/563068e7b8f84361b7e7eaf55bc932d8@up.edu/meetingtype/IDAW4C2bLUazF-V_xb7RAQ2?anonymous&amp;ismsaljsauthenabled&amp;ep=mLinkFromTile"
+target="_Blank">Probability and Statistics I Exam Retakes</a> <br>
+<em>Click on the link to sign-up for a 15-minute session.</em></li>
+</ul>
+</blockquote>
+</div>
+<div id="make-up-exams" class="section level3">
+<h3>Make-up Exams</h3>
+<p>You can make-up an exam due to extenuating circumstances. Please let
+me know if you can’t make it to an exam day. If you missed an exam day,
+please let me know as soon as possible to discuss the next steps.</p>
+<p>Here are the rules of make-up exams:</p>
+<ul>
+<li>A missed exam day means that you will automatically receive a grade
+of “M” for that particular exam, which means no retakes.</li>
+<li>You need to have a prior discussion with me before you can schedule
+a make-up exam.</li>
+<li>Make-up exams by appointment must be scheduled 24 hours in
+advance.</li>
+<li>Make-up exams must be done within one week of the original exam
+day.</li>
+</ul>
+<blockquote>
+<p>Here is how you can sign-up for the exam (oral part) make-ups:</p>
+<ul>
+<li><a
+href="https://outlook.office.com/bookwithme/user/563068e7b8f84361b7e7eaf55bc932d8@up.edu/meetingtype/IDAW4C2bLUazF-V_xb7RAQ2?anonymous&amp;ismsaljsauthenabled&amp;ep=mLinkFromTile"
+target="_Blank">Probability and Statistics I Exam Make-Ups</a> <br>
+<em>Click on the link to sign-up for a 15-minute session.</em></li>
+</ul>
+</blockquote>
+</div>
+<div id="final-exam" class="section level3">
+<h3>Final Exam</h3>
+<p>The final exam includes the written and oral parts, and it will be
+cumulative.</p>
+<p>Here are the rules for the final exam:</p>
+<ul>
+<li>The same written and oral part rules apply for the final exam.</li>
+<li>Retakes and make-up for previous exams are not allowed during final
+exam days.</li>
+<li>You need to have at least a mark of “NI” to maintain your current
+standing in this course.</li>
+<li>Retakes and make-up are not possible for the final exam.</li>
+</ul>
+<blockquote>
+<p>The final exam days are:</p>
+<ul>
+<li>Monday 12/7 to Thursday 12/10</li>
+</ul>
+</blockquote>
+<p><br></p>
+</div>
+</div>
+<div id="academic-integrity" class="section level2">
+<h2><strong>Academic Integrity</strong></h2>
+<div id="the-honor-code-statement" class="section level3">
+<h3>The Honor Code Statement</h3>
+<blockquote>
+<p>I commit to upholding the code of academic integrity by demonstrating
+ethical and responsible academic practices and adhering to the
+principles of academic integrity.</p>
+</blockquote>
+<p>You are encouraged to utilize all resources available to you,
+including course materials, online references, and collaborative
+discussions with your classmates. However, you must adhere to the
+following principles:</p>
+<ul>
+<li><strong>Follow the Academic Integrity Policy:</strong> Ensure all
+work is your own or properly credited where collaboration or external
+resources are involved.</li>
+<li><strong>Comply with the Course AI Policy:</strong> Any use of AI
+tools must align with the course-specific AI guidelines provided. Misuse
+of AI will be considered a violation of academic integrity.</li>
+<li><strong>Adhere to Referencing and Citation Guidelines:</strong>
+Properly cite all external sources used in your work to give appropriate
+credit and avoid plagiarism.</li>
+<li><strong>Uphold the Academic Honor Code:</strong> I trust you to
+maintain the highest standards of honesty and integrity in your
+work.</li>
+<li><strong>Take Ownership of Your Work:</strong> You must contribute
+meaningfully and be prepared to explain and defend your work.</li>
+</ul>
+</div>
+<div id="code-of-academic-integrity" class="section level3">
+<h3>Code of Academic Integrity<span
+class="math inline">\(^*\)</span></h3>
+<p>The University of Portland is a diverse academic community of
+learners and scholars who are dedicated to freely sharing ideas and
+engaging in respectful discussion of those ideas to discover truth. Such
+pursuits require each person, whether student or faculty, to present
+truthfully our own ideas and give credit to others for the ideas that
+they generate. Thus, cheating on exams, copying another student’s
+assignment, including homework, or using the work of others without
+proper citation are some examples of violating academic integrity.</p>
+<p>Especially for written and oral assignments, students have an ethical
+responsibility to properly cite the authors of any books, articles, or
+other sources that they use. Students should expect to submit
+assignments to Turnitin, a database that ensures assignments are
+original work of the student submitting. Each discipline has guidelines
+for how to give appropriate credit, and instructors will communicate the
+specific guidelines for their discipline. The Clark Library also
+maintains a webpage that provides citation guidelines at <a
+href="https://libguides.up.edu/cite"
+target="_blank_">https://libguides.up.edu/cite</a>.</p>
+<p>The misuse of AI to shortcut course learning outcomes will be treated
+as a violation of academic integrity comparable to plagiarism or
+cheating. Faculty are responsible for including a written “Course AI
+Policy” in their syllabi that clearly states what they consider
+appropriate and inappropriate uses of AI in the context of their
+courses. Students are responsible for using AI in ways that do not
+detract from the established learning outcomes of the course. All
+members of the scholarly community are responsible for demonstrating
+sound judgment in discerning when and how to utilize AI in their work,
+upholding standards of citation, originality, and integrity.</p>
+</div>
+<div id="course-ai-policy" class="section level3">
+<h3>Course AI Policy</h3>
+<p>The use of generative AI —such as Claude, Copilot, Gemini, or
+ChatGPT— is allowed in all of its capacity. However, students must use
+these tools ethically and responsibly. To use generative AI responsibly
+in this class, students should grasp underlying concepts, acknowledge
+AI’s assistance, protect data privacy, verify information, and uphold
+academic honor code. AI should be seen as a learning aid, not a
+replacement for critical thinking.</p>
+<p>This AI policy applies only to this course. For other courses, please
+follow those professors’ AI policies, which may differ from this
+one.</p>
+</div>
+<div id="ethics-of-information" class="section level3">
+<h3>Ethics of Information<span class="math inline">\(^*\)</span></h3>
+<p>The University of Portland is a community dedicated to the
+investigation and discovery of processes for thinking ethically and
+encouraging the development of ethical reasoning in the formation of the
+whole person. Using information ethically, as an element in open and
+honest scholarly endeavors, involves moral reasoning to determine the
+right way to access, create, distribute, and employ information,
+including: considerations of intellectual property rights, fair use,
+information bias, censorship, and privacy. More information can be found
+in the Clark Library’s guide to the Ethical Use of Information at <a
+href="https://libguides.up.edu/ethicaluse"
+target="_blank">libguides.up.edu/ethicaluse</a>.</p>
+</div>
+</div>
+<div id="other-expectations" class="section level2">
+<h2><strong>Other Expectations</strong></h2>
+<div id="deadline-extensions" class="section level3">
+<h3>Deadline Extensions</h3>
+<p>If you need more time to submit an assignment, you may request an
+extension by following these steps:</p>
+<ul>
+<li>Communicate with me at least 12 hours before the deadline.</li>
+<li>Specify the exact day you plan to submit your work or the number of
+extra days you need.</li>
+<li>Please ensure that you adhere to the established timeline for
+submitting assignments, as it is important to maintain fairness and
+avoid over-reliance on extensions.</li>
+</ul>
+<p>Extensions for in-class assignments —such as worksheets— will only be
+granted if I decide to extend the deadline for the entire class.</p>
+</div>
+<div id="late-assignments" class="section level3">
+<h3>Late Assignments</h3>
+<p>Submitting a few hours late is usually not a major issue, as long as
+I receive your work before I begin marking and providing feedback. An
+extension is not required in such cases.</p>
+<p>You are expected to turn in all completed assignments “on time”.
+Extenuating circumstances that may disallow you to turn in your work on
+time are understandable. Please let me know if you have missed the
+deadline way beyond its original posted date without prior communication
+regarding extensions. Because every assignment is an important aspect of
+your learning in this class, we will discuss when you will turn in the
+assignment as well as decide upon an acceptable consequence for your
+turning it in late. I am committed to successfully helping you learn
+from this course.</p>
+</div>
+<div id="attendance-and-participation" class="section level3">
+<h3>Attendance and Participation</h3>
+<p>Class attendance is highly recommended and often tracked through
+assignments and general behavior. You are expected to actively
+participate in this class. Participation includes coming to class on
+time, being prepared, being willing to ask questions and share ideas,
+setting up study groups outside of class, attending tutoring and help
+hour sessions, posting helpful resources online, and contributing to the
+discussion channels. Group and individual presentation of ideas is a
+suggested component of participation.</p>
+</div>
+<div id="absences" class="section level3">
+<h3>Absences</h3>
+<p>Generally, you are expected to attend all class sessions according to
+my direction. If you feel unwell, you should not attend class in person.
+Should I need to miss class, the course may be temporarily conducted
+remotely. Should I be unable to teach for an extended period of time,
+the mathematics department will find a substitute to continue the
+course.</p>
+</div>
+<div id="appointment-cancellations" class="section level3">
+<h3>Appointment Cancellations</h3>
+<p>Please try to show-up to your scheduled appointments. You can cancel
+your appointments, but it is strongly recommended that you communicate
+this to me before your scheduled appointment. You can reschedule for a
+different day and time if necessary.</p>
+</div>
+<div id="incompletes" class="section level3">
+<h3>Incompletes</h3>
+<p>An incomplete <strong>I</strong> will only be considered when the
+quality of your work is satisfactory (C- or better). For some essential
+reason the course has not been completed, an <strong>I</strong> is
+reserved for extenuating circumstances only. If this applies to you,
+please let me know as soon as possible to discuss next steps.</p>
+</div>
+<div id="withdrawal-procedures" class="section level3">
+<h3>Withdrawal Procedures</h3>
+<p>It is your responsibility to drop the course if you are no longer
+planning on attending the course or fulfilling the course requirements.
+In order to drop, you must use an Add/Drop form available at the
+Registrar’s Office. If you do not properly withdraw from this course,
+you may receive an <strong>F</strong> for the course. A properly
+withdrawn student will receive a <strong>W</strong>. The last day to
+withdraw is <strong>Monday, 4/13</strong>.</p>
+</div>
+<div id="accessibility-statement" class="section level3">
+<h3>Accessibility Statement<span class="math inline">\(^*\)</span></h3>
+<p>The University of Portland strives to make its courses and services
+fully accessible to all students. Students are encouraged to discuss
+with their instructors what might be most helpful in enabling them to
+meet the learning goals of the course. Students who experience a
+disability are encouraged to use the services of the Office for
+Accessible Education Services (AES), located in the Shepard Academic
+Resource Center (503-943-8985). <strong>If you have an AES Accommodation
+Plan</strong>, you should meet with your instructor to discuss how to
+implement your plan in this class. Requests for alternate location for
+exams and/or extended exam time should, where possible, be made two
+weeks in advance of an exam, and must be made at least one week in
+advance of an exam. Also, if applicable, you should meet with your
+instructor to discuss emergency medical information or how best to
+ensure your safe evacuation from the building in case of fire or other
+emergency. All information that students provide regarding disability or
+accommodation is confidential. All students are responsible for
+completing the required coursework and are held to the same evaluation
+standards specified in the course syllabus.</p>
+</div>
+<div id="mental-health-statement" class="section level3">
+<h3>Mental Health Statement<span class="math inline">\(^*\)</span></h3>
+<p>Anyone can experience problems with their mental health that
+interfere with academic experiences and negatively impact daily life. If
+you or someone you know experiences mental health challenges at UP,
+please contact the University of Portland Counseling Center (<a
+href="https://www.up.edu/counseling/"
+target="_Blank">https://www.up.edu/counseling/</a>) in the upper level
+of Orrico Hall (down the hill from Franz Hall and near Mehling Hall) at
+503-943-7134 or <a href="mailto:hcc@up.edu"
+class="email">hcc@up.edu</a>. Their services are free and confidential.
+In addition, mental health consultation and support is available through
+the Pilot Helpline by calling 503-943-7134 and pressing 3. All UP
+students also have access to teletherapy through BetterMynd. The
+University of Portland Campus Safety Department (503-943-4444) also has
+personnel trained to respond sensitively to mental health emergencies at
+all hours. Remember that getting help is a smart and courageous thing to
+do —for yourself, for those you care about, and for those who care about
+you. For more information on health and wellness resources at UP go to
+<a href="www.linktr.ee/wellnessUP"
+target="_Blank">www.linktr.ee/wellnessUP</a>.</p>
+</div>
+<div id="non-violence-statement" class="section level3">
+<h3>Non-Violence Statement<span class="math inline">\(^*\)</span></h3>
+<p>The University of Portland is committed to fostering a safe and
+respectful community free from all forms of violence. Violence of any
+kind, and in particular acts of power-based personal violence, are
+inconsistent with our mission. Together, all UP community members must
+take a stand against violence. Learn more about what interpersonal
+violence looks like, campus and community resources, UP’s prevention
+strategy, and what we as individuals can do to assist on the Green Dot
+website, <a href="https://www.up.edu/greendot"
+target="_blank">www.up.edu/greendot</a>. Further information and
+reporting options may be found on the Title IX website, <a
+href="https://www.up.edu/titleix"
+target="_blank">www.up.edu/titleix</a>.</p>
+<p><br></p>
+</div>
+</div>
+</div>
+<div id="materials" class="section level1">
+<h1>Materials</h1>
+<p>You are “required” to read the materials, and are strongly encouraged
+to actively participate in class discussions and complete the
+assignments efficiently to deepen your understanding and succeed in the
+course.</p>
+<blockquote>
+<ul>
+<li>All course materials are available in this course’s Canvas Modules
+page at <a href="https://portland.instructure.com/courses/1651/modules"
+target="_blank">MTH-461 A - Modules</a>.</li>
+</ul>
+</blockquote>
+<div id="topics-schedule" class="section level2">
+<h2><strong>Topics Schedule</strong></h2>
+<table>
+<colgroup>
+<col width="16%" />
+<col width="16%" />
+<col width="66%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center"><strong>Week</strong></th>
+<th align="center"><strong>Day</strong></th>
+<th align="left"><strong>Topics</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><strong>1</strong></td>
+<td align="center">M 8/24</td>
+<td align="left"><span class="math inline">\(\rightarrow\)</span>
+Orientation<br><span class="math inline">\(\rightarrow\)</span> Calculus
+Review<br><span class="math inline">\(\rightarrow\)</span> Discrete
+Structures “Review”<br><span class="math inline">\(\rightarrow\)</span>
+Linear Algebra “Review”<br><span
+class="math inline">\(\rightarrow\)</span> Using Technology for
+Calculus, Discrete Structures, and Linear Algebra</td>
+</tr>
+<tr class="even">
+<td align="center"></td>
+<td align="center">W 8/26</td>
+<td align="left"><span class="math inline">\(\rightarrow\)</span>
+Probability Axioms<br><span class="math inline">\(\rightarrow\)</span>
+Interpreting Probability</td>
+</tr>
+<tr class="odd">
+<td align="center"></td>
+<td align="center">F 8/28</td>
+<td align="left"><span class="math inline">\(\rightarrow\)</span> Sample
+Spaces<br><span class="math inline">\(\rightarrow\)</span> Events</td>
+</tr>
+<tr class="even">
+<td align="center"><strong>2</strong></td>
+<td align="center">M 8/31</td>
+<td align="left"><span class="math inline">\(\rightarrow\)</span> Basic
+Counting<br><span class="math inline">\(\rightarrow\)</span>
+Mathematical Proofs</td>
+</tr>
+<tr class="odd">
+<td align="center"></td>
+<td align="center">W 9/2</td>
+<td align="left"><span class="math inline">\(\rightarrow\)</span>
+Advanced Counting<br><span class="math inline">\(\rightarrow\)</span>
+Probability Definition</td>
+</tr>
+<tr class="even">
+<td align="center"></td>
+<td align="center">F 9/4</td>
+<td align="left"><span class="math inline">\(\rightarrow\)</span> Using
+Counting to Solve Probability Problems</td>
+</tr>
+<tr class="odd">
+<td align="center"><strong>3</strong></td>
+<td align="center">M 9/7</td>
+<td align="left"><span class="math inline">\(\rightarrow\)</span>
+Dependent Events<br><span class="math inline">\(\rightarrow\)</span>
+Intuition of Conditional Probability<br><span
+class="math inline">\(\rightarrow\)</span> Conditional Probability
+Definition</td>
+</tr>
+<tr class="even">
+<td align="center"></td>
+<td align="center">W 9/9</td>
+<td align="left"><span class="math inline">\(\rightarrow\)</span>
+Introduction to Bayes’ Theorem<br><span
+class="math inline">\(\rightarrow\)</span> Law of Total Probability</td>
+</tr>
+<tr class="odd">
+<td align="center"></td>
+<td align="center">F 9/11</td>
+<td align="left"><span class="math inline">\(\rightarrow\)</span>
+Independent Events<br><span class="math inline">\(\rightarrow\)</span>
+Using Bayes’ Rule to Solve Probability Problems</td>
+</tr>
+<tr class="even">
+<td align="center"><strong>4</strong></td>
+<td align="center">M 9/14</td>
+<td align="left"><span class="math inline">\(\rightarrow\)</span>
+Discrete Random Variables</td>
+</tr>
+<tr class="odd">
+<td align="center"></td>
+<td align="center">W 9/16</td>
+<td align="left"><span class="math inline">\(\rightarrow\)</span>
+Probability Mass Functions</td>
+</tr>
+<tr class="even">
+<td align="center"></td>
+<td align="center">F 9/18</td>
+<td align="left"><span class="math inline">\(\rightarrow\)</span>
+Discrete Cumulative Distribution Functions</td>
+</tr>
+<tr class="odd">
+<td align="center"><strong>5</strong></td>
+<td align="center">M 9/21</td>
+<td align="left"><span class="math inline">\(\rightarrow\)</span> Using
+Technology to Simulate Random Sampling</td>
+</tr>
+<tr class="even">
+<td align="center"></td>
+<td align="center">W 9/23</td>
+<td align="left"><em>Review</em></td>
+</tr>
+<tr class="odd">
+<td align="center"></td>
+<td align="center">Th 9/24 to F 9/25</td>
+<td align="left"><strong>Exam 1</strong> on Topics from <strong>Weeks 1,
+2, and 3</strong> (No Class Session on F 9/25)</td>
+</tr>
+<tr class="even">
+<td align="center"><strong>6</strong></td>
+<td align="center">M 9/28</td>
+<td align="left"><span class="math inline">\(\rightarrow\)</span>
+Continuous Random Variables</td>
+</tr>
+<tr class="odd">
+<td align="center"></td>
+<td align="center">W 9/30</td>
+<td align="left"><span class="math inline">\(\rightarrow\)</span>
+Probability Density Functions</td>
+</tr>
+<tr class="even">
+<td align="center"></td>
+<td align="center">F 10/2</td>
+<td align="left"><span class="math inline">\(\rightarrow\)</span>
+Continuous Cumulative Distribution Functions</td>
+</tr>
+<tr class="odd">
+<td align="center"><strong>7</strong></td>
+<td align="center">M 10/5</td>
+<td align="left"><span class="math inline">\(\rightarrow\)</span>
+Functions of Random Variables<br><span
+class="math inline">\(\rightarrow\)</span> Independence of Random
+Variables</td>
+</tr>
+<tr class="even">
+<td align="center"></td>
+<td align="center">W 10/7</td>
+<td align="left"><span class="math inline">\(\rightarrow\)</span>
+Expectation Definition<br><span
+class="math inline">\(\rightarrow\)</span> Properties of the Expected
+Value</td>
+</tr>
+<tr class="odd">
+<td align="center"></td>
+<td align="center">F 10/9</td>
+<td align="left"><span class="math inline">\(\rightarrow\)</span> 1D Law
+of Unconscious Statistician</td>
+</tr>
+<tr class="even">
+<td align="center"><strong>8</strong></td>
+<td align="center">M 10/12</td>
+<td align="left"><em>Fall Vacation</em></td>
+</tr>
+<tr class="odd">
+<td align="center"></td>
+<td align="center">W 10/14</td>
+<td align="left"><em>Fall Vacation</em></td>
+</tr>
+<tr class="even">
+<td align="center"></td>
+<td align="center">F 10/16</td>
+<td align="left"><em>Fall Vacation</em></td>
+</tr>
+<tr class="odd">
+<td align="center"><strong>9</strong></td>
+<td align="center">M 10/19</td>
+<td align="left"><span class="math inline">\(\rightarrow\)</span> Using
+Technology to Estimate Expected Values</td>
+</tr>
+<tr class="even">
+<td align="center"></td>
+<td align="center">W 10/21</td>
+<td align="left"><em>Review</em></td>
+</tr>
+<tr class="odd">
+<td align="center"></td>
+<td align="center">Th 10/22 to F 10/23</td>
+<td align="left"><strong>Exam 2</strong> on Topics from <strong>Weeks 4,
+6, and 7</strong> (No Class Session on F 10/23)</td>
+</tr>
+<tr class="even">
+<td align="center"><strong>10</strong></td>
+<td align="center">M 10/26</td>
+<td align="left"><span class="math inline">\(\rightarrow\)</span>
+Moments Definition<br><span class="math inline">\(\rightarrow\)</span>
+Moments Interpretation</td>
+</tr>
+<tr class="odd">
+<td align="center"></td>
+<td align="center">W 10/28</td>
+<td align="left"><span class="math inline">\(\rightarrow\)</span>
+Central Moments<br><span class="math inline">\(\rightarrow\)</span>
+Variance</td>
+</tr>
+<tr class="even">
+<td align="center"></td>
+<td align="center">F 10/30</td>
+<td align="left"><span class="math inline">\(\rightarrow\)</span> Moment
+Generating Functions</td>
+</tr>
+<tr class="odd">
+<td align="center"><strong>11</strong></td>
+<td align="center">M 11/2</td>
+<td align="left"><span class="math inline">\(\rightarrow\)</span> Joint
+Distributions<br><span class="math inline">\(\rightarrow\)</span>
+Marginal Distributions</td>
+</tr>
+<tr class="even">
+<td align="center"></td>
+<td align="center">W 11/4</td>
+<td align="left"><span class="math inline">\(\rightarrow\)</span>
+Conditional Distributions</td>
+</tr>
+<tr class="odd">
+<td align="center"></td>
+<td align="center">F 11/6</td>
+<td align="left"><span class="math inline">\(\rightarrow\)</span> 2D Law
+of Unconscious Statistician<br><span
+class="math inline">\(\rightarrow\)</span> Covariance<br><span
+class="math inline">\(\rightarrow\)</span> Correlation</td>
+</tr>
+<tr class="even">
+<td align="center"><strong>12</strong></td>
+<td align="center">M 11/9</td>
+<td align="left"><span class="math inline">\(\rightarrow\)</span>
+Transformations of Random Variables<br><span
+class="math inline">\(\rightarrow\)</span> 1D Change of Variables</td>
+</tr>
+<tr class="odd">
+<td align="center"></td>
+<td align="center">W 11/11</td>
+<td align="left"><span class="math inline">\(\rightarrow\)</span>
+Convolutions</td>
+</tr>
+<tr class="even">
+<td align="center"></td>
+<td align="center">F 11/13</td>
+<td align="left"><span class="math inline">\(\rightarrow\)</span>
+Conditional Expectation<br><span
+class="math inline">\(\rightarrow\)</span> Properties of Conditional
+Expectation</td>
+</tr>
+<tr class="odd">
+<td align="center"><strong>13</strong></td>
+<td align="center">M 11/16</td>
+<td align="left"><span class="math inline">\(\rightarrow\)</span> Using
+Technology to Estimate Probability Distributions</td>
+</tr>
+<tr class="even">
+<td align="center"></td>
+<td align="center">W 11/18</td>
+<td align="left"><em>Review</em></td>
+</tr>
+<tr class="odd">
+<td align="center"></td>
+<td align="center">Th 11/19 to F 11/20</td>
+<td align="left"><strong>Exam 3</strong> on Topics from <strong>Weeks
+10, 11 and 12</strong> (No Class Session on F 11/20)</td>
+</tr>
+<tr class="even">
+<td align="center"><strong>14</strong></td>
+<td align="center">M 11/23</td>
+<td align="left"><span class="math inline">\(\rightarrow\)</span>
+Introduction to Markov Chains<br><span
+class="math inline">\(\rightarrow\)</span> Markov Property</td>
+</tr>
+<tr class="odd">
+<td align="center"></td>
+<td align="center">W 11/25</td>
+<td align="left"><span class="math inline">\(\rightarrow\)</span>
+Transition Matrix<br><span class="math inline">\(\rightarrow\)</span>
+Stationary Distribution</td>
+</tr>
+<tr class="even">
+<td align="center"></td>
+<td align="center">F 11/27</td>
+<td align="left"><em>Thanksgiving Vacation</em></td>
+</tr>
+<tr class="odd">
+<td align="center"><strong>15</strong></td>
+<td align="center">M 11/30</td>
+<td align="left"><span class="math inline">\(\rightarrow\)</span> Using
+Technology to Simulate Markov Chains (Optional)<br><span
+class="math inline">\(\rightarrow\)</span> Using Technology to Analyze
+High-Dimensional Probability Distributions (Optional)</td>
+</tr>
+<tr class="even">
+<td align="center"></td>
+<td align="center">W 12/2</td>
+<td align="left"><span class="math inline">\(\rightarrow\)</span>
+Introduction to Statistical Learning (Optional)<br><span
+class="math inline">\(\rightarrow\)</span> Bias-Variance Trade-Off
+(Optional)</td>
+</tr>
+<tr class="odd">
+<td align="center"></td>
+<td align="center">F 12/4</td>
+<td align="left"><span class="math inline">\(\rightarrow\)</span>
+Introduction to Language Models (Optional)<br><span
+class="math inline">\(\rightarrow\)</span> N-Gram Model
+(Optional)<br><span class="math inline">\(\rightarrow\)</span> Word
+Embeddings (Optional)</td>
+</tr>
+<tr class="even">
+<td align="center"><strong>16</strong></td>
+<td align="center">M 12/7 to Th 12/10</td>
+<td align="left"><strong>Cumulative Exam</strong> (Topics from
+<strong>Exams 1, 2, &amp; 3</strong> including Topics from <strong>Week
+14</strong>)</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+</div>
+<div id="class-readings" class="section level2">
+<h2>Class Readings</h2>
+<p>The “Read” column in the table below contains page numbers (Pg.) or
+chapters (Ch.) on which it refers to a label in the Books &amp; Online
+Resources List. For example “Ch. 1.1-1.2 <span
+class="citation">[1]</span>” refers to Chapters 1.1 and 1.2 of the
+textbook titled <em>Introduction to Probability</em>.</p>
+<blockquote>
+<ul>
+<li>You can freely access the textbook here <a
+href="http://probabilitybook.net/"
+target="blank_">http://probabilitybook.net/</a>.</li>
+</ul>
+</blockquote>
+<table>
+<colgroup>
+<col width="71%" />
+<col width="28%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left"><strong>Topic</strong></th>
+<th align="left"><strong>Read</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Orientation</td>
+<td align="left">Syllabus</td>
+</tr>
+<tr class="even">
+<td align="left">Calculus Review</td>
+<td align="left">-</td>
+</tr>
+<tr class="odd">
+<td align="left">Discrete Structures “Review”</td>
+<td align="left">-</td>
+</tr>
+<tr class="even">
+<td align="left">Linear Algebra “Review”</td>
+<td align="left">-</td>
+</tr>
+<tr class="odd">
+<td align="left">Using Technology for Calculus, Discrete Structures, and
+Linear Algebra</td>
+<td align="left">-</td>
+</tr>
+<tr class="even">
+<td align="left">Probability Axioms</td>
+<td align="left">Ch. 1.1 &amp; 1.3 <span
+class="citation">[1]</span></td>
+</tr>
+<tr class="odd">
+<td align="left">Interpreting Probability</td>
+<td align="left">-</td>
+</tr>
+<tr class="even">
+<td align="left">Sample Spaces</td>
+<td align="left">Ch. 1.2 <span class="citation">[1]</span></td>
+</tr>
+<tr class="odd">
+<td align="left">Events</td>
+<td align="left">-</td>
+</tr>
+<tr class="even">
+<td align="left">Basic Counting</td>
+<td align="left">Ch. 1.4 <span class="citation">[1]</span></td>
+</tr>
+<tr class="odd">
+<td align="left">Mathematical Proofs</td>
+<td align="left">Ch. 1.5 <span class="citation">[1]</span></td>
+</tr>
+<tr class="even">
+<td align="left">Advanced Counting</td>
+<td align="left">-</td>
+</tr>
+<tr class="odd">
+<td align="left">Probability Definition</td>
+<td align="left">Ch. 1.6 <span class="citation">[1]</span></td>
+</tr>
+<tr class="even">
+<td align="left">Using Counting to Solve Probability Problems</td>
+<td align="left">-</td>
+</tr>
+<tr class="odd">
+<td align="left">Dependent Events</td>
+<td align="left">Ch. 2.1 <span class="citation">[1]</span></td>
+</tr>
+<tr class="even">
+<td align="left">Intuition of Conditional Probability</td>
+<td align="left">-</td>
+</tr>
+<tr class="odd">
+<td align="left">Conditional Probability Definition</td>
+<td align="left">Ch. 2.2 <span class="citation">[1]</span></td>
+</tr>
+<tr class="even">
+<td align="left">Introduction to Bayes’ Theorem</td>
+<td align="left">Ch. 2.3 <span class="citation">[1]</span></td>
+</tr>
+<tr class="odd">
+<td align="left">Law of Total Probability</td>
+<td align="left">-</td>
+</tr>
+<tr class="even">
+<td align="left">Independent Events</td>
+<td align="left">Ch. 2.5 <span class="citation">[1]</span></td>
+</tr>
+<tr class="odd">
+<td align="left">Using Bayes’ Rule to Solve Probability Problems</td>
+<td align="left">-</td>
+</tr>
+<tr class="even">
+<td align="left">Discrete Random Variables</td>
+<td align="left">Ch. 3.1 <span class="citation">[1]</span></td>
+</tr>
+<tr class="odd">
+<td align="left">Probability Mass Functions</td>
+<td align="left">Ch. 3.2 <span class="citation">[1]</span></td>
+</tr>
+<tr class="even">
+<td align="left">Discrete Cumulative Distribution Functions</td>
+<td align="left">Ch. 3.6 <span class="citation">[1]</span></td>
+</tr>
+<tr class="odd">
+<td align="left">Using Technology to Simulate Random Sampling</td>
+<td align="left">-</td>
+</tr>
+<tr class="even">
+<td align="left">Continuous Random Variables</td>
+<td align="left">-</td>
+</tr>
+<tr class="odd">
+<td align="left">Probability Density Functions</td>
+<td align="left">Ch. 5.1 <span class="citation">[1]</span></td>
+</tr>
+<tr class="even">
+<td align="left">Continuous Cumulative Distribution Functions</td>
+<td align="left">-</td>
+</tr>
+<tr class="odd">
+<td align="left">Functions of Random Variables</td>
+<td align="left">Ch. 3.7 <span class="citation">[1]</span></td>
+</tr>
+<tr class="even">
+<td align="left">Independence of Random Variables</td>
+<td align="left">Ch. 3.8 <span class="citation">[1]</span></td>
+</tr>
+<tr class="odd">
+<td align="left">Expectation Definition</td>
+<td align="left">Ch. 4.1 <span class="citation">[1]</span></td>
+</tr>
+<tr class="even">
+<td align="left">Properties of the Expected Value</td>
+<td align="left">Ch. 4.2 <span class="citation">[1]</span></td>
+</tr>
+<tr class="odd">
+<td align="left">1D Law of Unconscious Statistician</td>
+<td align="left">Ch. 4.5 <span class="citation">[1]</span></td>
+</tr>
+<tr class="even">
+<td align="left">Using Technology to Estimate Expected Values</td>
+<td align="left">-</td>
+</tr>
+<tr class="odd">
+<td align="left">Moments Definition</td>
+<td align="left">Ch. 6.1 <span class="citation">[1]</span></td>
+</tr>
+<tr class="even">
+<td align="left">Moments Interpretation</td>
+<td align="left">Ch. 6.2 <span class="citation">[1]</span></td>
+</tr>
+<tr class="odd">
+<td align="left">Central Moments</td>
+<td align="left">Ch. 6.3 <span class="citation">[1]</span></td>
+</tr>
+<tr class="even">
+<td align="left">Variance</td>
+<td align="left">Ch. 4.6 <span class="citation">[1]</span></td>
+</tr>
+<tr class="odd">
+<td align="left">Moment Generating Functions</td>
+<td align="left">Ch. 6.4 <span class="citation">[1]</span></td>
+</tr>
+<tr class="even">
+<td align="left">Joint Distributions</td>
+<td align="left">Ch. 7.1 <span class="citation">[1]</span></td>
+</tr>
+<tr class="odd">
+<td align="left">Marginal Distributions</td>
+<td align="left">-</td>
+</tr>
+<tr class="even">
+<td align="left">Conditional Distributions</td>
+<td align="left">-</td>
+</tr>
+<tr class="odd">
+<td align="left">2D Law of Unconscious Statistician</td>
+<td align="left">Ch. 7.2 <span class="citation">[1]</span></td>
+</tr>
+<tr class="even">
+<td align="left">Covariance</td>
+<td align="left">Ch. 7.3 <span class="citation">[1]</span></td>
+</tr>
+<tr class="odd">
+<td align="left">Correlation</td>
+<td align="left">-</td>
+</tr>
+<tr class="even">
+<td align="left">Transformations of Random Variables</td>
+<td align="left">-</td>
+</tr>
+<tr class="odd">
+<td align="left">1D Change of Variables</td>
+<td align="left">Ch. 8.1 <span class="citation">[1]</span></td>
+</tr>
+<tr class="even">
+<td align="left">Convolutions</td>
+<td align="left">Ch. 8.2 <span class="citation">[1]</span></td>
+</tr>
+<tr class="odd">
+<td align="left">Conditional Expectation</td>
+<td align="left">Ch. 9.1-9.2 <span class="citation">[1]</span></td>
+</tr>
+<tr class="even">
+<td align="left">Properties of Conditional Expectation</td>
+<td align="left">Ch. 9.3 <span class="citation">[1]</span></td>
+</tr>
+<tr class="odd">
+<td align="left">Using Technology to Estimate Probability
+Distributions</td>
+<td align="left">-</td>
+</tr>
+<tr class="even">
+<td align="left">Introduction to Markov Chains</td>
+<td align="left">Ch. 11.1-11.2 <span class="citation">[1]</span></td>
+</tr>
+<tr class="odd">
+<td align="left">Markov Property</td>
+<td align="left">-</td>
+</tr>
+<tr class="even">
+<td align="left">Transition Matrix</td>
+<td align="left">-</td>
+</tr>
+<tr class="odd">
+<td align="left">Stationary Distribution</td>
+<td align="left">Ch. 11.3 <span class="citation">[1]</span></td>
+</tr>
+<tr class="even">
+<td align="left">Using Technology to Simulate Markov Chains
+(Optional)</td>
+<td align="left">-</td>
+</tr>
+<tr class="odd">
+<td align="left">Using Technology to Analyze High-Dimensional
+Probability Distributions (Optional)</td>
+<td align="left">-</td>
+</tr>
+<tr class="even">
+<td align="left">Introduction to Statistical Learning (Optional)</td>
+<td align="left">-</td>
+</tr>
+<tr class="odd">
+<td align="left">Bias-Variance Trade-Off (Optional)</td>
+<td align="left">-</td>
+</tr>
+<tr class="even">
+<td align="left">Introduction to Language Models (Optional)</td>
+<td align="left">-</td>
+</tr>
+<tr class="odd">
+<td align="left">N-Gram Model (Optional)</td>
+<td align="left">-</td>
+</tr>
+<tr class="even">
+<td align="left">Word Embeddings (Optional)</td>
+<td align="left">-</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="books-online-resources-lists" class="section level2">
+<h2>Books &amp; Online Resources Lists</h2>
+<div id="refs" class="references csl-bib-body" entry-spacing="0">
+<div id="ref-blitzstein2019introduction" class="csl-entry">
+<div class="csl-left-margin">1. </div><div
+class="csl-right-inline">Blitzstein JK, Hwang J (2019) <a
+href="http://probabilitybook.net/">Introduction to probability</a>,
+Chapman; Hall/CRC.</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+   
+   
+            
+      
+
+  <script>
+    $(document).ready(function () {
+
+			
+ 		
+	    });
+  </script>
+
+
+
+    <!-- dynamically load mathjax for compatibility with self-contained -->
+  <script>
+    (function () {
+	var script = document.createElement("script");
+	script.type = "text/javascript";
+	script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+	document.getElementsByTagName("head")[0].appendChild(script);
+    })();
+  </script>
+  
+</body>
+</html>

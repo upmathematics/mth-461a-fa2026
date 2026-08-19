@@ -1,0 +1,9 @@
+name: "MTH-461A-fa2026"
+output_dir: "docs"
+description: |
+  Probability and Statistics I at the University of Portland
+output:
+   rmdformats::readthedown:
+      lib_dir: site_libs
+      link-citations: true
+      css: css/custom.css

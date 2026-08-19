@@ -1,0 +1,605 @@
+---
+title: "MTH-461: Probability and Statistics I"
+subtitle: | 
+  | Section A
+  | Fall 2026
+  | Department of Mathematics
+  | University of Portland
+author: | 
+  | Dr. [Alex John Quijano](https://www.alexjohnquijano.com){target='_blank'} [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/){target='_blank'}
+  | Department of Mathematics
+  | University of Portland
+  | 
+  | Made with [R](https://cran.r-project.org/){target='_blank'} and [RMarkdown](https://rmarkdown.rstudio.com/){target='_blank'}
+  | Last updated on `r format(Sys.Date(), format='%B %d, %Y')`
+bibliography: references.bib
+csl: mbe.csl
+nocite: '@*'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Syllabus
+
+## **About the Class**
+
+### Description
+
+This course is an introduction to the fundamental theory of probability and common statistical methods. Topics include basic and conditional probability, random variables, probability functions, expectation, variance, moment generating functions, common and uncommon probability distributions. Additional topics may include random sampling, estimation, and an introduction to Markov Chains.
+
+### Instructor Information
+
+> * Instructor: Dr. Alex John Quijano
+> * Office: Buckley Center 279
+
+### Lectures and Discussions
+
+This course meets on Mondays, Tuesdays, and Fridays. The typical class routine will include pre-reading assignments before each class, followed by a short lecture or demonstration, worksheet activities, group presentations, and discussions.
+
+> The course schedule and location is:
+>
+> * **Section A:** MWF 1:35 PM - 2:30 PM, Dundun-Berchtold 235
+
+### Textbook
+
+This course uses the following textbook —which is free to access— for reading and practice.
+
+```{r echo=FALSE}
+refs <- bibtex::read.bib("references.bib")
+```
+
+>  * `r capture.output(print(refs["blitzstein2019introduction"]))`
+
+### Credit Hours and Prerequisites
+
+* Credit hours: 3
+* Prerequisites: MTH 202 (Calculus II) and MTH 311 (Discrete Structures) with a grade of C- or higher or permission of the instructor.
+
+<br>
+
+## **Communication Tools**
+
+### Canvas
+
+The syllabus, tentative topics schedule, and other information are posted on [Canvas](https://portland.instructure.com/){target="_blank"}. We will be using Canvas as the main real-time communication tool for general announcements, question-answering discussions, and direct messages.
+
+> You can access this course's Canvas Home page at [MTH-461 A](https://portland.instructure.com/courses/1651){target="_blank"}. You are already listed in Canvas for this course using your UP account.
+
+### Email
+
+My UP email is quijano@up.edu. 
+
+> If you prefer communicating through email, note that I have set up an email filter for this course, and you should put the "MTH 321" keyword in your subject line. 
+
+It is easy for me to get notice of your email if you put the keyword in the subject line. Concise and specific messages are helpful, so I know how I can best help you.
+
+<br>
+
+## **Assignment Tools**
+
+### Canvas
+
+We will be using Canvas for posting/submitting assignments and giving feedback.
+
+> You can access this course's Canvas Assignments page at [Mth-461 A - Assignments](https://portland.instructure.com/courses/1651/assignments){target="_blank"}.
+
+### Posit Cloud
+
+We will be using the Python and R programming languages as a computational tool for some assignments. This tool is free and open-source. We will use the Posit Cloud service.
+
+* [Posit Cloud](https://login.posit.cloud/login?redirect=%2F){target="_blank"} is an online computing environment that supports computations in Python.
+
+* [Python](https://www.python.org/){target="_blank"} is a powerful language for mathematical computing, widely used for symbolic algebra, numerical analysis, data visualization, and building custom models.
+
+* [Jupyter](https://jupyter.org/){target="_blank"} is an interactive computing environment that lets you combine live code, math, visualizations, and narrative text for exploring, documenting, and sharing mathematical analyses and simulations.
+
+* [R](https://www.r-project.org/){target="_blank"} is a programming language and environment used for statistical analysis, data visualization, and data-driven research.
+
+* [R Studio](https://posit.co/download/rstudio-desktop/){target="_blank"} is an environment that makes it easier to write, run, and manage R code for data analysis and visualization.
+
+> Create a free account at [Posit Cloud Sign-Up](https://login.posit.cloud/register?redirect=%2F){target="_blank"} using your UP email. Note that you must use your UP email for me to add you into the course’s workspace in Posit Cloud. You will receive an email inviting you into the workspace at the first week of the semester.
+
+If you'd like to set up Python and R on your own computer, start by installing [Python](https://www.python.org/){target="_blank"} and [R](https://cran.r-project.org/){target="_blank"}, then install [Jupyter](https://jupyter.org/){target="_blank"} and [R Studio](https://posit.co/download/rstudio-desktop/){target="_blank"} to run and share code interactively. Feel free to reach out if you'd like help with any step!
+
+> Python and R instructions and materials will be provided ad hoc.
+
+<br>
+
+## **Learning Goals**
+
+### Learning Outcomes
+
+Upon completion of the course, you will be able to:
+
+* Understand the basic concepts of probability.
+* Understand the basic concepts of conditional probability and independence.
+* Identify discrete and continuous random variables.
+* Define random variables and their associated probability distributions.
+* Apply probability concepts to model uncertainty in real-world processes.
+* Solve common probability problems.
+* Analyze probability distributions and sampling variability for statistical inference.
+* Write clear and concise mathematical solutions to probability problems.
+* Communicate effectively about probability with other students, instructors, and professionals.
+* Work independently and as part of a team to solve probability problems.
+* Effectively use technology to support the analysis and solution of probability problems.
+
+### Learning Objectives
+
+The following learning objectives are designed to build on one another, with some overlap. The goal is to help you achieve proficiency in these areas.
+
+| **Topic Category** | **Learning Objectives** |
+|:---|:---------|
+| **Basic Probability** | $\rightarrow$ Describe and interpret sample spaces and events.<br>$\rightarrow$ Describe basic probability rules.<br>$\rightarrow$ Solve probability problems using basic rules. |
+| **Conditional Probability** | $\rightarrow$ Describe and interpret dependent events.<br>$\rightarrow$ Distinguish between dependent and independent events.<br>$\rightarrow$ Describe and interpret conditional probability rules.<br>$\rightarrow$ Describe and interpret Bayes' theorem<br>$\rightarrow$ Solve conditional probability problems using basic rules and Bayes' theorem. |
+| **Random Variables** | $\rightarrow$ Describe and interpret a discrete/continuous random variable.<br>$\rightarrow$ Describe and interpret random variables from a given sampling scenario.<br>$\rightarrow$ Explain the connection between random variables and probability functions. |
+| **Probability Functions/Distributions** | $\rightarrow$ Describe and interpret probability Distributions.<br>$\rightarrow$ Compute the expected value and variance of random variables given their probability functions.<br>$\rightarrow$ Compute the moment generating functions of random variables.<br>$\rightarrow$ Interpret the meaning of expectation, variance, and moments of random variables.<br>$\rightarrow$ Solve problems using probability distributions. |
+| **Joint Distributions** | $\rightarrow$ Construct and interpret joint probability distributions, including deriving marginal and conditional distributions.<br>$\rightarrow$ Determine independence between random variables and evaluate association using covariance and correlation.<br>$\rightarrow$ Apply joint distributions to compute expectations and variances of multiple random variables. |
+| **Random Processes** | $\rightarrow$ Apply sampling methods (with and without replacement) to model random selection and estimate associated probabilities.<br>$\rightarrow$ Analyze fundamental random processes, including, random walks, Brownian motion, and Poisson process, and describe their defining properties.<br>$\rightarrow$ Describe and interpret Markov chains, including transition matrices and the Markov property, as an introduction to modeling sequential dependence. |
+
+<br>
+
+## **Academic Support**
+
+### Help Hours
+
+> Dr. Alex John Quijano
+> 
+> * Walk-in Monday to Thursday at 4:00 PM, Buckley Center 279
+> * [One-to-One, Buckley Center 279](https://outlook.office.com/bookwithme/user/563068e7b8f84361b7e7eaf55bc932d8@up.edu/meetingtype/KXqoHwKuE0qdlfS1AiumEg2?anonymous&ismsaljsauthenabled&ep=mLinkFromTile){target="_blank"} <br>*Click on the link to sign-up for a 15-minute session.*
+
+My walk-in and by-appointment help hours begin in Week 2. If you need more than 15 minutes for a one-to-one help hour by-appointment, you can book at most two consecutive sessions.
+
+If no one show up in the first 30 minutes of my walk-in help hours, the walk-in help hours will end.
+
+### The Learning Commons$^*$
+
+Students may receive academic assistance through Learning Commons tutoring services and workshops. The Co-Pilot peer tutoring program provides students with opportunities to work with other students to get help in writing, math, group projects, and many other courses. Schedule an appointment to meet with a Co-Pilot (tutor) by visiting the Learning Commons website ([www.up.edu/learningcommons](www.up.edu/learningcommons){target="_blank"}). Students can also meet with a Co-Pilot during drop-in hours. Check the Learning Commons website or stop by the Learning Commons in BC 163 to learn more about their services. Co-Pilots are a wonderful support along your academic journey.
+
+### Math Resource Center
+
+Appointment-based tutoring accepts appointments starting week 1 and sessions start week 2. Visit the [Math Resource Center](https://www.up.edu/learningcommons/tutoring-services/math-resource-center/index.html){target="_blank"} website to sign-up for an appointment. Drop-in tutoring is Monday to Thursday, 3:00 PM - 7:00 PM in BC 163 and starts week 2. Check the Math Resource Center website or drop by the center for more information.
+
+### Help Hours Guidelines
+
+It is strongly recommended that you attend the walk-in help hours or set up a one-to-one meeting with the me if you feel like you are falling behind during our in-person class activities, or if you just need to clarify concepts discussed in class. In order to be more productive during a one-to-one meeting (or the walk-in help hours), these are three recommendations before you come in:
+
+  * List all gaps in knowledge you have (missed concepts) or list all concepts that were unclear to you during class. We will address them one by one.
+  * Prepare questions you want answered and be ready to show relevant materials.
+  * Regarding assignments, prepare to show (a) what are the steps you have tried and (b) what are the errors you encountered and the strategies you have tried.
+
+Note that these are recommendations so that you can get the most out of the help hours allocated for you. If you just want to come in and chat about something else, feel free to do so. If the dedicated time for one-to-one meeting does not work for you, send me a message to set up an appointment.
+
+### Collaboration Policy
+
+I expect you to participate in the class through lectures, class activities, discussions, homework, and other engagements. I also expect you to make use of opportunities to get help outside of class (help hours, Teams, email, tutoring) if you need help. Concise and specific messages are the most helpful so I know how I can best help you.
+
+> You are encouraged to participate in discussions with your peers regarding assignments. However, each student must take responsibility and ownership of their work and submit their work individually, except for group projects.
+
+<br>
+
+## **Assessment**
+
+### Assessment Disclosure Statement$^*$
+
+Student work products for this course may be used by the University for educational quality assurance purposes. For reasons of confidentiality, such examples will not include student names.
+
+### Standards-Based Grading
+
+Learning probability demands focus, rigorous examination of the concepts you have encountered, and a process of ongoing refinement and improvement. You will be assessed on your proficiency in solving a variety of probability problems, both graphically and analytically, using different methods. You will have opportunities to demonstrate your proficiency, revise your work, and reflect on your growth in solving a variety of probability problems.
+
+This course uses a standards-based grading system, which emphasizes mastery of specific learning objectives. This approach is more precise and motivating than traditional grading methods and fosters a more equitable learning environment. Key features of standards-based grading include:
+
+  * A clear focus on mastering defined learning objectives
+  * The use of diverse assessment methods to evaluate understanding
+  * Regular, detailed feedback to guide your progress
+  * Support in setting meaningful goals and tracking your growth
+
+This system prioritizes learning and personal development, enabling you to excel and reach your highest potential.
+
+### General Marking Guide
+
+Each assignment will be graded according to the general marking guide detailed below. You will be given feedback on your assignment and learning process to improve your performance. Note that each assignment has its own rubric guided by these general guidelines and the assignment’s learning objectives.
+
+Given the following marks, your work:
+
+| **Mark** | **Rubric Description** |
+|:-----|:---------------|
+| **Outstanding <br>(O)** | Shows perfect solution sets with key steps shown clearly and concisely; applies concepts/methods correctly and consistently across similar problems; includes complete and well-represented graphs/diagrams; and, when appropriate, may extend on applying concepts/methods to new situations. |
+| **Excellent <br>(E)** | Shows near-perfect solution sets with key steps shown clearly and concisely; applies concepts/methods correctly and consistently across similar problems but with minor errors such as non-propagating algebraic mistakes, and incomplete or under-represented graphs/diagrams. |
+| **Acceptable <br>(A)** | Shows approximate solutions sets with key steps shown clearly and concisely; applies concepts/methods correctly and consistently across similar problems but with major errors such as propagating algebraic mistakes, and incomplete or under-represented graphs/diagrams. |
+| **Needs Improvement <br>(NI)** | Shows rough solution sets with key steps mostly shown comprehensibly; applies concepts/methods incorrectly or inconsistently across similar problems with major errors such as propagating algebraic mistakes, and incomplete or under-represented graphs/diagrams. |
+| **Needs Major Improvement <br>(NMI)** | Shows rudimentary solution sets but with key steps mostly shown incomprehensibly; applies concepts/methods incorrectly and inconsistently across similar problems with major errors such as propagating algebraic mistakes, and incomplete or under-represented graphs/diagrams.  |
+| **Missing <br>(M)** | Shows incomplete or fully incomprehensible work. |
+
+Note that these are categorical marks, not numerical scores.
+
+### Final Course Grades
+
+| **Assignment** | **Rank** | **Mark** | **A,A-** | **B+,B,B-** | **C+,C,C-** | **D+,D,D-** |
+|:----------|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
+| **Exams** | 1 | O | $\frac{3}{4}$ | - | - | - |
+|  |  | E | - | $\frac{3}{4}$ | - | - |
+|  |  | A | - | - | $\frac{2}{4}$ | - |
+|  |  | NI | - | - | - | $\frac{2}{4}$ |
+| **Homeworks** | 2 | O | $\frac{6}{6}$ | - | - | - |
+|  |  | E | - | $\frac{6}{6}$ | - | - |
+|  |  | A | - | - | $\frac{5}{6}$ | - |
+|  |  | NI | - | - | - | $\frac{5}{6}$ |
+| **Worksheets** | 3 | Completed | $\frac{34}{37}$ | $\frac{30}{37}$ | $\frac{26}{37}$ | $\frac{23}{37}$ |
+
+The above table shows the fraction of given assignments. These fractions are minimum requirements for each letter grade category. Plus/minus letter grades will be determined by your overall coursework and your final exam.
+
+The ranking indicates the relative importance of each assignment: Rank 1 is the most important, and Rank 3 is the least. If the mark distribution across assignments varies for you, this ranking will be used to determine your final grade. There will also be optional assignments that you may complete to contribute additional credit within each assignment category.
+
+> Each of you will receive an individual assignment marksheet in the middle of the semester to help you track your progress and current standing in the course. If you need more assistance on understanding your overall standing in this course, I encourage you to communicate with me directly.
+
+<br>
+
+## **Assignments**
+
+### Submission Guidelines
+
+> You need to submit all assignments online through Moodle.
+>   
+>   * Worksheets must be in a single `.pdf` file.
+>   * Homework or Exams must be in a single `.pdf` file along with supplementary Python code (`.py` or `.ipynb`) if any.
+
+Your work must be labeled correctly and clearly written. Homework, worksheets, and exams can be electronically hand-written or typed but must be uploaded to Moodle as a single `.pdf` file. Here are additional submission rules:
+
+* If you choose to handwrite your answers on paper, scan your document using a scanner app to ensure the text is clear. I recommend using the "Adobe Scan" app, which is available for both Android and iOS.
+* If the assignment involves (or it requires you to show) a Python coding component, you must include all relevant Python code files that generated all outputs, plots, and analysis. Your Python code must be properly documented or with comments.
+
+### Worksheets
+
+There will be worksheets every class day except for exam weeks. The purpose of the worksheets is for in-class group work and activities, and it will include instructions on how to use Python and/or R for Probability.
+
+> You must submit your worksheet individually by end-of-class or end-of-day. Your name must exist in your worksheet and the names of your collaborators.
+
+Worksheets are marked mostly on completion, and partially on correctness. It will be marked either pass or fail, there will no detailed feedback on worksheets, and no opportunities for revisions and make-up.
+
+### Homeworks
+
+Homeworks are assigned every Tuesday, except for exam days. The purpose of the homework is to provide practice with problems, and it will include tasks that involve Python.
+
+> You must submit your homework individually by the prescribed deadline.
+
+Homeworks are marked using the general grading guide and will be returned with detailed feedback.
+
+### Homework Revisions
+
+You can revise your homework for an up-grade, meaning -for example- a grade of "NI" can be up-graded to "A".
+
+Here are the qualifications and requirements for homework revisions:
+
+  * A homework mark of "NMI", "NI", "A", or "E".
+  * The revised homework must be completed, meaning all parts should have your full written solutions.
+  * Homework marked with "M" is disqualified for revisions, but you can still use them as practice.
+  
+Here are the rules for homework revisions:
+
+  * Homework revisions are accepted within one week of the homework being returned to you, otherwise the grade is set.
+  * You have one chance to revise your homework.
+
+### Exams
+
+Exams are given in two parts which are in written and oral forms. Below are the description of each part of the exams.
+
+#### **Written**
+
+The written part of the exam allows you demonstrate your understanding of the material in written form. This part will be evaluated on the details of your computations and solutions.
+
+Written exams will be graded on 3 components:
+
+| **Written Component** | **Description** |
+|-----:|:---------------|
+| **Methodology** | The appropriate method should be applied correctly and consistently across similar problems with shown understanding of the underlying principles. |
+| **Reasoning** | The method should be explained in a clear and logical way with each key step justified and explained. |
+| **Writing** | The solution process should be written in a clear and concise way including key steps with appropriate mathematical notations along with complete and well represented graphs/diagrams. |
+
+Here are the rules for the written part of the exams:
+
+  * Written exams are take-home exam and given Monday of an exam week.
+  * Written exams are due on your scheduled oral part of the exam.
+  * Late submissions are not accepted unless the instructor allows under extenuating circumstances.
+
+#### **Oral**
+
+The oral part of the exam allows you to demonstrate your understanding of the material verbally. It is administered mostly in dialog style during exam days. The oral exam lasts only ten to fifteen minutes and includes predetermined questions about problems from the written exam, which are provided to you ahead of time. This part will be evaluated on your ability to explain key concepts and navigate through different ways to solve problems, rather than detailed solutions.
+
+Oral exams will be graded on 3 components:
+
+| **Oral Component** | **Description** |
+|-----:|:---------------|
+| **Knowledge** | The mathematical definitions and procedures should be recalled accurately and applied appropriately and consistently. |
+| **Communication** | The underlying concepts should be explained clearly, concisely, and consistently using appropriate mathematical language. |
+| **Problem-solving** | The given problem should be critically identified, understood, and solved using the prescribed or unprescribed methods or strategies. |
+
+Here are the rules for the oral part of the exams:
+    
+  * You must sign-up for a time slot on an exam week 24 hours in advance.
+  * You must submit your written exam by the start of your scheduled oral exam.
+  * You may have all resources with you during the oral exam, that includes your notes, books, and online resources.
+  * You may not communicate with others during the exam except to me.
+  * You may not ask conceptual questions to me except for clarifying questions about the problem, and minor computations.
+
+The grade you will receive for exams are a breakdown of your written and oral exam results with detailed feedback.
+
+> Here is how you can sign-up for the exam (oral part):
+>
+> * [Probability and Statistics I Exam](https://outlook.office.com/bookwithme/user/563068e7b8f84361b7e7eaf55bc932d8@up.edu/meetingtype/sshxbwNim0GYISvE5uA9Tw2?anonymous&ismsaljsauthenabled&ep=mLinkFromTile){target="_Blank"} <br> *Click on the link to sign-up for a 15-minute session.*
+
+### Exam Retakes
+
+It is possible to retake an exam, This allows you to have your exam up-graded, meaning -for example- a grade of "NI" can be up-graded to "A".
+
+The same exam guidelines are applied to the retakes with the only difference is that during the oral part of the exam retake:
+  
+  * You need to provide your revised version of the written part.
+  * You need to provide a short discussion explaining what was revised and what you learned from the revision process.
+
+Here are the qualifications for exam retakes:
+
+  * An exam grade of "NMI", NI", "A", or "E".
+  * The revised exam must be completed, meaning all parts should have your full written solutions. Incomplete work is disqualified for a retake.
+  
+Here are the rules for exam retakes:
+
+  * Any exam retake must occur within one week of its return. After this period, the mark is final.
+  * You have one chance to retake an exam.
+
+> Here is how you can sign-up for the exam (oral part) retakes:
+>
+> * [Probability and Statistics I Exam Retakes](https://outlook.office.com/bookwithme/user/563068e7b8f84361b7e7eaf55bc932d8@up.edu/meetingtype/IDAW4C2bLUazF-V_xb7RAQ2?anonymous&ismsaljsauthenabled&ep=mLinkFromTile){target="_Blank"} <br> *Click on the link to sign-up for a 15-minute session.*
+
+### Make-up Exams
+
+You can make-up an exam due to extenuating circumstances. Please let me know if you can’t make it to an exam day. If you missed an exam day, please let me know as soon as possible to discuss the next steps.
+
+Here are the rules of make-up exams:
+
+  * A missed exam day means that you will automatically receive a grade of "M" for that particular exam, which means no retakes.
+  * You need to have a prior discussion with me before you can schedule a make-up exam.
+  * Make-up exams by appointment must be scheduled 24 hours in advance.
+  * Make-up exams must be done within one week of the original exam day.
+
+> Here is how you can sign-up for the exam (oral part) make-ups:
+>
+> * [Probability and Statistics I Exam Make-Ups](https://outlook.office.com/bookwithme/user/563068e7b8f84361b7e7eaf55bc932d8@up.edu/meetingtype/IDAW4C2bLUazF-V_xb7RAQ2?anonymous&ismsaljsauthenabled&ep=mLinkFromTile){target="_Blank"} <br> *Click on the link to sign-up for a 15-minute session.*
+
+### Final Exam
+
+The final exam includes the written and oral parts, and it will be cumulative. 
+
+Here are the rules for the final exam:
+
+  * The same written and oral part rules apply for the final exam.
+  * Retakes and make-up for previous exams are not allowed during final exam days.
+  * You need to have at least a mark of "NI" to maintain your current standing in this course.
+  * Retakes and make-up are not possible for the final exam.
+
+> The final exam days are:
+>
+>   * Monday 12/7 to Thursday 12/10
+
+<br>
+
+## **Academic Integrity**
+
+### The Honor Code Statement
+
+> I commit to upholding the code of academic integrity by demonstrating ethical and responsible academic practices and adhering to the principles of academic integrity.
+
+You are encouraged to utilize all resources available to you, including course materials, online references, and collaborative discussions with your classmates. However, you must adhere to the following principles:
+
+* **Follow the Academic Integrity Policy:** Ensure all work is your own or properly credited where collaboration or external resources are involved.
+* **Comply with the Course AI Policy:** Any use of AI tools must align with the course-specific AI guidelines provided. Misuse of AI will be considered a violation of academic integrity.
+* **Adhere to Referencing and Citation Guidelines:** Properly cite all external sources used in your work to give appropriate credit and avoid plagiarism.
+* **Uphold the Academic Honor Code:** I trust you to maintain the highest standards of honesty and integrity in your work.
+* **Take Ownership of Your Work:** You must contribute meaningfully and be prepared to explain and defend your work.
+
+### Code of Academic Integrity$^*$
+
+The University of Portland is a diverse academic community of learners and scholars who are dedicated to freely sharing ideas and engaging in respectful discussion of those ideas to discover truth. Such pursuits require each person, whether student or faculty, to present truthfully our own ideas and give credit to others for the ideas that they generate. Thus, cheating on exams, copying another student’s assignment, including homework, or using the work of others without proper citation are some examples of violating academic integrity. 
+
+Especially for written and oral assignments, students have an ethical responsibility to properly cite the authors of any books, articles, or other sources that they use. Students should expect to submit assignments to Turnitin, a database that ensures assignments are original work of the student submitting. Each discipline has guidelines for how to give appropriate credit, and instructors will communicate the specific guidelines for their discipline. The Clark Library also maintains a webpage that provides citation guidelines at [https://libguides.up.edu/cite](https://libguides.up.edu/cite){target="_blank_"}. 
+
+The misuse of AI to shortcut course learning outcomes will be treated as a violation of academic integrity comparable to plagiarism or cheating. Faculty are responsible for including a written “Course AI Policy” in their syllabi that clearly states what they consider appropriate and inappropriate uses of AI in the context of their courses. Students are responsible for using AI in ways that do not detract from the established learning outcomes of the course. All members of the scholarly community are responsible for demonstrating sound judgment in discerning when and how to utilize AI in their work, upholding standards of citation, originality, and integrity.
+
+### Course AI Policy
+
+The use of generative AI —such as Claude, Copilot, Gemini, or ChatGPT— is allowed in all of its capacity. However, students must use these tools ethically and responsibly. To use generative AI responsibly in this class, students should grasp underlying concepts, acknowledge AI's assistance, protect data privacy, verify information, and uphold academic honor code. AI should be seen as a learning aid, not a replacement for critical thinking.
+
+This AI policy applies only to this course. For other courses, please follow those professors’ AI policies, which may differ from this one.
+
+### Ethics of Information$^*$
+
+The University of Portland is a community dedicated to the investigation and discovery of processes for thinking ethically and encouraging the development of ethical reasoning in the formation of the whole person. Using information ethically, as an element in open and honest scholarly endeavors, involves moral reasoning to determine the right way to access, create, distribute, and employ information, including: considerations of intellectual property rights, fair use, information bias, censorship, and privacy. More information can be found in the Clark Library’s guide to the Ethical Use of Information at [libguides.up.edu/ethicaluse](https://libguides.up.edu/ethicaluse){target="_blank"}.
+
+## **Other Expectations**
+
+### Deadline Extensions
+
+If you need more time to submit an assignment, you may request an extension by following these steps:
+
+  * Communicate with me at least 12 hours before the deadline.
+  * Specify the exact day you plan to submit your work or the number of extra days you need.
+  * Please ensure that you adhere to the established timeline for submitting assignments, as it is important to maintain fairness and avoid over-reliance on extensions.
+
+Extensions for in-class assignments —such as worksheets— will only be granted if I decide to extend the deadline for the entire class.
+
+### Late Assignments
+
+Submitting a few hours late is usually not a major issue, as long as I receive your work before I begin marking and providing feedback. An extension is not required in such cases.
+
+You are expected to turn in all completed assignments "on time". Extenuating circumstances that may disallow you to turn in your work on time are understandable. Please let me know if you have missed the deadline way beyond its original posted date without prior communication regarding extensions. Because every assignment is an important aspect of your learning in this class, we will discuss when you will turn in the assignment as well as decide upon an acceptable consequence for your turning it in late. I am committed to successfully helping you learn from this course.
+
+### Attendance and Participation
+
+Class attendance is highly recommended and often tracked through assignments and general behavior. You are expected to actively participate in this class. Participation includes coming to class on time, being prepared, being willing to ask questions and share ideas, setting up study groups outside of class, attending tutoring and help hour sessions, posting helpful resources online, and contributing to the discussion channels. Group and individual presentation of ideas is a suggested component of participation.
+
+### Absences
+
+Generally, you are expected to attend all class sessions according to my direction. If you feel unwell, you should not attend class in person. Should I need to miss class, the course may be temporarily conducted remotely. Should I be unable to teach for an extended period of time, the mathematics department will find a substitute to continue the course.
+
+### Appointment Cancellations
+
+Please try to show-up to your scheduled appointments. You can cancel your appointments, but it is strongly recommended that you communicate this to me before your scheduled appointment. You can reschedule for a different day and time if necessary.
+
+### Incompletes
+
+An incomplete **I** will only be considered when the quality of your work is satisfactory (C- or better). For some essential reason the course has not been completed, an **I** is reserved for extenuating circumstances only. If this applies to you, please let me know as soon as possible to discuss next steps.
+
+### Withdrawal Procedures
+
+It is your responsibility to drop the course if you are no longer planning on attending the course or fulfilling the course requirements. In order to drop, you must use an Add/Drop form available at the Registrar's Office. If you do not properly withdraw from this course, you may receive an **F** for the course. A properly withdrawn student will receive a **W**. The last day to withdraw is **Monday, 4/13**.
+
+### Accessibility Statement$^*$
+
+The University of Portland strives to make its courses and services fully accessible to all students. Students are encouraged to discuss with their instructors what might be most helpful in enabling them to meet the learning goals of the course. Students who experience a disability are encouraged to use the services of the Office for Accessible Education Services (AES), located in the Shepard Academic Resource Center (503-943-8985). **If you have an AES Accommodation Plan**, you should meet with your instructor to discuss how to implement your plan in this class. Requests for alternate location for exams and/or extended exam time should, where possible, be made two weeks in advance of an exam, and must be made at least one week in advance of an exam. Also, if applicable, you should meet with your instructor to discuss emergency medical information or how best to ensure your safe evacuation from the building in case of fire or other emergency. All information that students provide regarding disability or accommodation is confidential. All students are responsible for completing the required coursework and are held to the same evaluation standards specified in the course syllabus.
+
+### Mental Health Statement$^*$
+
+Anyone can experience problems with their mental health that interfere with academic experiences and negatively impact daily life. If you or someone you know experiences mental health challenges at UP, please contact the University of Portland Counseling Center ([https://www.up.edu/counseling/](https://www.up.edu/counseling/){target="_Blank"})  in the upper level of Orrico Hall (down the hill from Franz Hall and near Mehling Hall) at 503-943-7134 or hcc@up.edu. Their services are free and confidential. In addition, mental health consultation and support is available through the Pilot Helpline by calling 503-943-7134 and pressing 3. All UP students also have access to teletherapy through BetterMynd. The University of Portland Campus Safety Department (503-943-4444) also has personnel trained to respond sensitively to mental health emergencies at all hours. Remember that getting help is a smart and courageous thing to do —for yourself, for those you care about, and for those who care about you. For more information on health and wellness resources at UP go to [www.linktr.ee/wellnessUP](www.linktr.ee/wellnessUP){target="_Blank"}.
+
+### Non-Violence Statement$^*$
+
+The University of Portland is committed to fostering a safe and respectful community free from all forms of violence. Violence of any kind, and in particular acts of power-based personal violence, are inconsistent with our mission. Together, all UP community members must take a stand against violence. Learn more about what interpersonal violence looks like, campus and community resources, UP’s prevention strategy, and what we as individuals can do to assist on the Green Dot website, [www.up.edu/greendot](https://www.up.edu/greendot){target="_blank"}. Further information and reporting options may be found on the Title IX website, [www.up.edu/titleix](https://www.up.edu/titleix){target="_blank"}.
+
+<br>
+
+# Materials
+
+You are "required" to read the materials, and are strongly encouraged to actively participate in class discussions and complete the assignments efficiently to deepen your understanding and succeed in the course.
+
+> * All course materials are available in this course’s Canvas Modules page at [MTH-461 A - Modules](https://portland.instructure.com/courses/1651/modules){target="_blank"}.
+
+## **Topics Schedule**
+
+| **Week** | **Day** | **Topics** |
+|:--:|:--:|:---------------|
+| **1** | M 8/24 | $\rightarrow$ Orientation<br>$\rightarrow$ Calculus Review<br>$\rightarrow$ Discrete Structures "Review"<br>$\rightarrow$ Linear Algebra "Review"<br>$\rightarrow$ Using Technology for Calculus, Discrete Structures, and Linear Algebra |
+|  | W 8/26 | $\rightarrow$ Probability Axioms<br>$\rightarrow$ Interpreting Probability |
+|  | F 8/28 | $\rightarrow$ Sample Spaces<br>$\rightarrow$ Events |
+| **2** | M 8/31 | $\rightarrow$ Basic Counting<br>$\rightarrow$ Mathematical Proofs |
+|  | W 9/2 | $\rightarrow$ Advanced Counting<br>$\rightarrow$ Probability Definition |
+|  | F 9/4 | $\rightarrow$ Using Counting to Solve Probability Problems |
+| **3** | M 9/7 | $\rightarrow$ Dependent Events<br>$\rightarrow$ Intuition of Conditional Probability<br>$\rightarrow$ Conditional Probability Definition |
+|  | W 9/9 | $\rightarrow$ Introduction to Bayes' Theorem<br>$\rightarrow$ Law of Total Probability |
+|  | F 9/11 | $\rightarrow$ Independent Events<br>$\rightarrow$ Using Bayes' Rule to Solve Probability Problems  |
+| **4** | M 9/14 | $\rightarrow$ Discrete Random Variables |
+|  | W 9/16 | $\rightarrow$ Probability Mass Functions |
+|  | F 9/18 | $\rightarrow$ Discrete Cumulative Distribution Functions |
+| **5** | M 9/21 | $\rightarrow$ Using Technology to Simulate Random Sampling |
+|  | W 9/23 | _Review_ |
+|  | Th 9/24 to F 9/25 | **Exam 1** on Topics from **Weeks 1, 2, and 3** (No Class Session on F 9/25) |
+| **6** | M 9/28 | $\rightarrow$ Continuous Random Variables |
+|  | W 9/30 | $\rightarrow$ Probability Density Functions |
+|  | F 10/2 | $\rightarrow$ Continuous Cumulative Distribution Functions  |
+| **7** | M 10/5 | $\rightarrow$ Functions of Random Variables<br>$\rightarrow$ Independence of Random Variables |
+|  | W 10/7 | $\rightarrow$ Expectation Definition<br>$\rightarrow$ Properties of the Expected Value |
+|  | F 10/9 | $\rightarrow$ 1D Law of Unconscious Statistician |
+| **8** |M 10/12 | _Fall Vacation_ |
+|  | W 10/14 | _Fall Vacation_ |
+|  | F 10/16 | _Fall Vacation_ |
+| **9** | M 10/19 | $\rightarrow$ Using Technology to Estimate Expected Values |
+|  | W 10/21 | _Review_ |
+|  | Th 10/22 to F 10/23 | **Exam 2** on Topics from **Weeks 4, 6, and 7** (No Class Session on F 10/23) |
+| **10** | M 10/26 | $\rightarrow$ Moments Definition<br>$\rightarrow$ Moments Interpretation |
+|  | W 10/28 | $\rightarrow$ Central Moments<br>$\rightarrow$ Variance |
+|  | F 10/30 | $\rightarrow$ Moment Generating Functions |
+| **11** | M 11/2 | $\rightarrow$ Joint Distributions<br>$\rightarrow$ Marginal Distributions |
+|  | W 11/4 | $\rightarrow$ Conditional Distributions |
+|  | F 11/6 | $\rightarrow$ 2D Law of Unconscious Statistician<br>$\rightarrow$ Covariance<br>$\rightarrow$ Correlation |
+| **12** | M 11/9 | $\rightarrow$ Transformations of Random Variables<br>$\rightarrow$ 1D Change of Variables |
+|  | W 11/11 | $\rightarrow$ Convolutions |
+|  | F 11/13 | $\rightarrow$ Conditional Expectation<br>$\rightarrow$ Properties of Conditional Expectation  |
+| **13** | M 11/16 | $\rightarrow$ Using Technology to Estimate Probability Distributions |
+|  | W 11/18 | _Review_ |
+|  | Th 11/19 to F 11/20 | **Exam 3** on Topics from **Weeks 10, 11 and 12** (No Class Session on F 11/20) |
+| **14** | M 11/23 | $\rightarrow$ Introduction to Markov Chains<br>$\rightarrow$ Markov Property |
+|  | W 11/25 | $\rightarrow$ Transition Matrix<br>$\rightarrow$ Stationary Distribution |
+|  | F 11/27 | _Thanksgiving Vacation_ |
+| **15** | M 11/30 | $\rightarrow$ Using Technology to Simulate Markov Chains (Optional)<br>$\rightarrow$ Using Technology to Analyze High-Dimensional Probability Distributions (Optional) |
+|  | W 12/2 | $\rightarrow$ Introduction to Statistical Learning (Optional)<br>$\rightarrow$ Bias-Variance Trade-Off (Optional) |
+|  | F 12/4 | $\rightarrow$ Introduction to Language Models (Optional)<br>$\rightarrow$ N-Gram Model (Optional)<br>$\rightarrow$ Word Embeddings (Optional) |
+| **16** | M 12/7 to Th 12/10 | **Cumulative Exam** (Topics from **Exams 1, 2, \& 3** including Topics from **Week 14**) |
+
+<br>
+
+## Class Readings
+
+The "Read" column in the table below contains page numbers (Pg.) or chapters (Ch.) on which it refers to a label in the Books \& Online Resources List. For example "Ch. 1.1-1.2 @blitzstein2019introduction" refers to Chapters 1.1 and 1.2 of the textbook titled *Introduction to Probability*.
+
+> * You can freely access the textbook here [http://probabilitybook.net/](http://probabilitybook.net/){target="blank_"}.
+
+| **Topic** | **Read** |
+|:---------|:---|
+| Orientation | Syllabus |
+| Calculus Review | - |
+| Discrete Structures "Review" | - |
+| Linear Algebra "Review" | - |
+| Using Technology for Calculus, Discrete Structures, and Linear Algebra | - |
+| Probability Axioms | Ch. 1.1 & 1.3 @blitzstein2019introduction |
+| Interpreting Probability | - |
+| Sample Spaces | Ch. 1.2 @blitzstein2019introduction |
+| Events | - |
+| Basic Counting | Ch. 1.4 @blitzstein2019introduction |
+| Mathematical Proofs | Ch. 1.5 @blitzstein2019introduction |
+| Advanced Counting | - |
+| Probability Definition | Ch. 1.6 @blitzstein2019introduction |
+| Using Counting to Solve Probability Problems | - |
+| Dependent Events | Ch. 2.1 @blitzstein2019introduction |
+| Intuition of Conditional Probability | - |
+| Conditional Probability Definition | Ch. 2.2 @blitzstein2019introduction |
+| Introduction to Bayes’ Theorem | Ch. 2.3 @blitzstein2019introduction |
+| Law of Total Probability | - |
+| Independent Events | Ch. 2.5 @blitzstein2019introduction |
+| Using Bayes’ Rule to Solve Probability Problems | - |
+| Discrete Random Variables | Ch. 3.1 @blitzstein2019introduction |
+| Probability Mass Functions | Ch. 3.2 @blitzstein2019introduction |
+| Discrete Cumulative Distribution Functions | Ch. 3.6 @blitzstein2019introduction |
+| Using Technology to Simulate Random Sampling | - |
+| Continuous Random Variables | - |
+| Probability Density Functions | Ch. 5.1 @blitzstein2019introduction |
+| Continuous Cumulative Distribution Functions | - |
+| Functions of Random Variables | Ch. 3.7 @blitzstein2019introduction |
+| Independence of Random Variables | Ch. 3.8 @blitzstein2019introduction |
+| Expectation Definition | Ch. 4.1 @blitzstein2019introduction |
+| Properties of the Expected Value | Ch. 4.2 @blitzstein2019introduction |
+| 1D Law of Unconscious Statistician | Ch. 4.5 @blitzstein2019introduction |
+| Using Technology to Estimate Expected Values | - |
+| Moments Definition | Ch. 6.1 @blitzstein2019introduction |
+| Moments Interpretation | Ch. 6.2 @blitzstein2019introduction |
+| Central Moments | Ch. 6.3 @blitzstein2019introduction |
+| Variance | Ch. 4.6 @blitzstein2019introduction |
+| Moment Generating Functions | Ch. 6.4 @blitzstein2019introduction |
+| Joint Distributions | Ch. 7.1 @blitzstein2019introduction |
+| Marginal Distributions | - |
+| Conditional Distributions | - |
+| 2D Law of Unconscious Statistician | Ch. 7.2 @blitzstein2019introduction |
+| Covariance | Ch. 7.3 @blitzstein2019introduction |
+| Correlation | - |
+| Transformations of Random Variables | - |
+| 1D Change of Variables | Ch. 8.1 @blitzstein2019introduction |
+| Convolutions | Ch. 8.2 @blitzstein2019introduction |
+| Conditional Expectation | Ch. 9.1-9.2 @blitzstein2019introduction |
+| Properties of Conditional Expectation | Ch. 9.3 @blitzstein2019introduction |
+| Using Technology to Estimate Probability Distributions | - |
+| Introduction to Markov Chains | Ch. 11.1-11.2 @blitzstein2019introduction |
+| Markov Property | - |
+| Transition Matrix | - |
+| Stationary Distribution | Ch. 11.3 @blitzstein2019introduction |
+| Using Technology to Simulate Markov Chains (Optional) | - |
+| Using Technology to Analyze High-Dimensional Probability Distributions (Optional) | - |
+| Introduction to Statistical Learning (Optional) | - |
+| Bias-Variance Trade-Off (Optional) | - |
+|  Introduction to Language Models (Optional) | - |
+| N-Gram Model (Optional) | - |
+| Word Embeddings (Optional) | - |
+
+## Books \& Online Resources Lists
+
+::: {#refs}
+:::
