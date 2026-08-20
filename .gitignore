@@ -1,3 +1,9 @@
+# directories
+docs/worksheet/
+docs/homework/
+docs/exam/
+docs/roster/
+
 .Rproj.user
 .Rhistory
 .RData

@@ -485,20 +485,20 @@ You are "required" to read the materials, and are strongly encouraged to activel
 | **2** | M 8/31 | $\rightarrow$ Basic Counting<br>$\rightarrow$ Mathematical Proofs |
 |  | W 9/2 | $\rightarrow$ Advanced Counting<br>$\rightarrow$ Probability Definition |
 |  | F 9/4 | $\rightarrow$ Using Counting to Solve Probability Problems |
-| **3** | M 9/7 | $\rightarrow$ Dependent Events<br>$\rightarrow$ Intuition of Conditional Probability<br>$\rightarrow$ Conditional Probability Definition |
-|  | W 9/9 | $\rightarrow$ Introduction to Bayes' Theorem<br>$\rightarrow$ Law of Total Probability |
-|  | F 9/11 | $\rightarrow$ Independent Events<br>$\rightarrow$ Using Bayes' Rule to Solve Probability Problems  |
-| **4** | M 9/14 | $\rightarrow$ Discrete Random Variables |
-|  | W 9/16 | $\rightarrow$ Probability Mass Functions |
+| **3** | M 9/7 | _Labor Day_ (offices closed, no classes) |
+|  | W 9/9 | $\rightarrow$ Dependent and Independent Events<br>$\rightarrow$ Conditional Probability Definition |
+|  | F 9/11 | $\rightarrow$ Introduction to Bayes' Theorem<br>$\rightarrow$ Law of Total Probability |
+| **4** | M 9/14 | $\rightarrow$ Using Bayes' Rule to Solve Probability Problems |
+|  | W 9/16 | $\rightarrow$ Discrete Random Variables<br>$\rightarrow$ Probability Mass Functions |
 |  | F 9/18 | $\rightarrow$ Discrete Cumulative Distribution Functions |
 | **5** | M 9/21 | $\rightarrow$ Using Technology to Simulate Random Sampling |
 |  | W 9/23 | _Review_ |
 |  | Th 9/24 to F 9/25 | **Exam 1** on Topics from **Weeks 1, 2, and 3** (No Class Session on F 9/25) |
-| **6** | M 9/28 | $\rightarrow$ Continuous Random Variables |
-|  | W 9/30 | $\rightarrow$ Probability Density Functions |
-|  | F 10/2 | $\rightarrow$ Continuous Cumulative Distribution Functions  |
+| **6** | M 9/28 | $\rightarrow$ Continuous Random Variables<br>$\rightarrow$ Probability Density Functions |
+|  | W 9/30 | $\rightarrow$ Continuous Cumulative Distribution Functions |
+|  | F 10/2 | $\rightarrow$ Convolutions |
 | **7** | M 10/5 | $\rightarrow$ Functions of Random Variables<br>$\rightarrow$ Independence of Random Variables |
-|  | W 10/7 | $\rightarrow$ Expectation Definition<br>$\rightarrow$ Properties of the Expected Value |
+|  | W 10/7 |  $\rightarrow$ Expectation Definition<br>$\rightarrow$ Properties of the Expected Value |
 |  | F 10/9 | $\rightarrow$ 1D Law of Unconscious Statistician |
 | **8** |M 10/12 | _Fall Vacation_ |
 |  | W 10/14 | _Fall Vacation_ |
@@ -511,9 +511,9 @@ You are "required" to read the materials, and are strongly encouraged to activel
 |  | F 10/30 | $\rightarrow$ Moment Generating Functions |
 | **11** | M 11/2 | $\rightarrow$ Joint Distributions<br>$\rightarrow$ Marginal Distributions |
 |  | W 11/4 | $\rightarrow$ Conditional Distributions |
-|  | F 11/6 | $\rightarrow$ 2D Law of Unconscious Statistician<br>$\rightarrow$ Covariance<br>$\rightarrow$ Correlation |
-| **12** | M 11/9 | $\rightarrow$ Transformations of Random Variables<br>$\rightarrow$ 1D Change of Variables |
-|  | W 11/11 | $\rightarrow$ Convolutions |
+|  | F 11/6 | $\rightarrow$ 2D Law of Unconscious Statistician |
+| **12** | M 11/9 | $\rightarrow$ Covariance<br>$\rightarrow$ Correlation |
+|  | W 11/11 | $\rightarrow$ Transformations of Random Variables<br>$\rightarrow$ 1D Change of Variables |
 |  | F 11/13 | $\rightarrow$ Conditional Expectation<br>$\rightarrow$ Properties of Conditional Expectation  |
 | **13** | M 11/16 | $\rightarrow$ Using Technology to Estimate Probability Distributions |
 |  | W 11/18 | _Review_ |
@@ -550,12 +550,10 @@ The "Read" column in the table below contains page numbers (Pg.) or chapters (Ch
 | Advanced Counting | - |
 | Probability Definition | Ch. 1.6 @blitzstein2019introduction |
 | Using Counting to Solve Probability Problems | - |
-| Dependent Events | Ch. 2.1 @blitzstein2019introduction |
-| Intuition of Conditional Probability | - |
+| Dependent and Independent Events | Ch. 2.1 & 2.5 @blitzstein2019introduction |
 | Conditional Probability Definition | Ch. 2.2 @blitzstein2019introduction |
 | Introduction to Bayes’ Theorem | Ch. 2.3 @blitzstein2019introduction |
 | Law of Total Probability | - |
-| Independent Events | Ch. 2.5 @blitzstein2019introduction |
 | Using Bayes’ Rule to Solve Probability Problems | - |
 | Discrete Random Variables | Ch. 3.1 @blitzstein2019introduction |
 | Probability Mass Functions | Ch. 3.2 @blitzstein2019introduction |
@@ -564,6 +562,7 @@ The "Read" column in the table below contains page numbers (Pg.) or chapters (Ch
 | Continuous Random Variables | - |
 | Probability Density Functions | Ch. 5.1 @blitzstein2019introduction |
 | Continuous Cumulative Distribution Functions | - |
+| Convolutions | Ch. 8.2 @blitzstein2019introduction |
 | Functions of Random Variables | Ch. 3.7 @blitzstein2019introduction |
 | Independence of Random Variables | Ch. 3.8 @blitzstein2019introduction |
 | Expectation Definition | Ch. 4.1 @blitzstein2019introduction |
@@ -583,7 +582,6 @@ The "Read" column in the table below contains page numbers (Pg.) or chapters (Ch
 | Correlation | - |
 | Transformations of Random Variables | - |
 | 1D Change of Variables | Ch. 8.1 @blitzstein2019introduction |
-| Convolutions | Ch. 8.2 @blitzstein2019introduction |
 | Conditional Expectation | Ch. 9.1-9.2 @blitzstein2019introduction |
 | Properties of Conditional Expectation | Ch. 9.3 @blitzstein2019introduction |
 | Using Technology to Estimate Probability Distributions | - |
@@ -595,7 +593,7 @@ The "Read" column in the table below contains page numbers (Pg.) or chapters (Ch
 | Using Technology to Analyze High-Dimensional Probability Distributions (Optional) | - |
 | Introduction to Statistical Learning (Optional) | - |
 | Bias-Variance Trade-Off (Optional) | - |
-|  Introduction to Language Models (Optional) | - |
+| Introduction to Language Models (Optional) | - |
 | N-Gram Model (Optional) | - |
 | Word Embeddings (Optional) | - |
 
