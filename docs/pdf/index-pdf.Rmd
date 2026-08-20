@@ -248,23 +248,29 @@ The ranking indicates the relative importance of each assignment: Rank 1 is the 
 
 ### Submission Guidelines
 
-> You need to submit all assignments online through Moodle.
+> You need to submit all assignments online through Canvas.
 >   
 >   * Worksheets must be in a single `.pdf` file.
 >   * Homework or Exams must be in a single `.pdf` file along with supplementary Python code (`.py` or `.ipynb`) if any.
 
-Your work must be labeled correctly and clearly written. Homework, worksheets, and exams can be electronically hand-written or typed but must be uploaded to Moodle as a single `.pdf` file. Here are additional submission rules:
+Your work must be labeled correctly and clearly written. Homework, worksheets, and exams can be electronically hand-written or typed but must be uploaded to Canvas as a single `.pdf` file. Here are additional submission rules:
 
 * If you choose to handwrite your answers on paper, scan your document using a scanner app to ensure the text is clear. I recommend using the "Adobe Scan" app, which is available for both Android and iOS.
 * If the assignment involves (or it requires you to show) a Python coding component, you must include all relevant Python code files that generated all outputs, plots, and analysis. Your Python code must be properly documented or with comments.
 
 ### Worksheets
 
-There will be worksheets every class day except for exam weeks. The purpose of the worksheets is for in-class group work and activities, and it will include instructions on how to use Python and/or R for Probability.
+There will be worksheets every class day except for exam weeks. The purpose of the worksheets is for in-class group work and activities, and it will include instructions on how to use Python or R for Probability.
 
-> You must submit your worksheet individually by end-of-class or end-of-day. Your name must exist in your worksheet and the names of your collaborators.
+> You need to submit your worksheet individually by end-of-class or end-of-day. Your name must exist in your worksheet and the names of your collaborators.
 
-Worksheets are marked mostly on completion, and partially on correctness. It will be marked either pass or fail, there will no detailed feedback on worksheets, and no opportunities for revisions and make-up.
+Here are the rules for worksheets:
+
+* You must work on your worksheet in class -at least the majority of it- in order for it to be credited.
+* If you are absent on the day the worksheet is assigned, then it will be marked as absent for that particular worksheet.
+* You may submit/re-submit absent marked worksheets at any time during the semester through email for consideration. The outcome will be decided according to my discretion at the end of the semester.
+
+Worksheets are marked mostly on completion, and partially on correctness. It will be marked pass, fail, or absent, there will no detailed feedback on worksheets, and no opportunities for revisions and make-up.
 
 ### Homeworks
 
