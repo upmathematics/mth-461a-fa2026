@@ -376,18 +376,19 @@ Here are the rules of make-up exams:
 
 ### Final Exam
 
-The final exam includes the written and oral parts, and it will be cumulative. 
+The final exam is an *unconventionally conventional* exam, and it will be cumulative. 
 
 Here are the rules for the final exam:
 
-  * The same written and oral part rules apply for the final exam.
+  * The final exam must take place in person at its scheduled time and location.
+  * All notes, books, and technology are not allowed during the exam.
   * Retakes and make-up for previous exams are not allowed during final exam days.
-  * You need to have at least a mark of "NI" to maintain your current standing in this course.
+  * You need to have at least a mark of "A" to maintain your current standing in this course.
   * Retakes and make-up are not possible for the final exam.
 
-> The final exam days are:
+> The final exam schedule and location are:
 >
->   * Monday 12/7 to Thursday 12/10
+>   * **Section A:** December 7, Monday, 1:30 PM - 3:30 PM, Dundon-Berchtold 235
 
 <br>
 
@@ -485,7 +486,7 @@ You are "required" to read the materials, and are strongly encouraged to activel
 
 | **Week** | **Day** | **Topics** |
 |:--:|:--:|:---------------|
-| **1** | M 8/24 | $\rightarrow$ Orientation<br>$\rightarrow$ Calculus Review<br>$\rightarrow$ Discrete Structures "Review"<br>$\rightarrow$ Linear Algebra "Review"<br>$\rightarrow$ Using Technology for Calculus, Discrete Structures, and Linear Algebra |
+| **1** | M 8/24 | $\rightarrow$ Orientation<br>$\rightarrow$ Calculus Review<br>$\rightarrow$ Discrete Structures "Review"<br>$\rightarrow$ Using Technology for Calculus and Discrete Structures |
 |  | W 8/26 | $\rightarrow$ Probability Axioms<br>$\rightarrow$ Interpreting Probability |
 |  | F 8/28 | $\rightarrow$ Sample Spaces<br>$\rightarrow$ Events |
 | **2** | M 8/31 | $\rightarrow$ Basic Counting<br>$\rightarrow$ Mathematical Proofs |
@@ -545,7 +546,6 @@ The "Read" column in the table below contains page numbers (Pg.) or chapters (Ch
 | Orientation | Syllabus |
 | Calculus Review | - |
 | Discrete Structures "Review" | - |
-| Linear Algebra "Review" | - |
 | Using Technology for Calculus, Discrete Structures, and Linear Algebra | - |
 | Probability Axioms | Ch. 1.1 & 1.3 @blitzstein2019introduction |
 | Interpreting Probability | - |
