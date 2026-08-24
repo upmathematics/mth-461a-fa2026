@@ -267,7 +267,7 @@ Worksheets are marked mostly on completion, and partially on correctness. It wil
 
 ### Homeworks
 
-Homeworks are assigned every Tuesday, except for exam days. The purpose of the homework is to provide practice with problems, and it will include tasks that involve Python.
+Homeworks are assigned every Monday, except for exam days. The purpose of the homework is to provide practice with problems, and it will include tasks that involve Python and/or R.
 
 > You must submit your homework individually by the prescribed deadline.
 
