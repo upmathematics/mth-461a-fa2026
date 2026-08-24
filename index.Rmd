@@ -87,7 +87,7 @@ We will be using Canvas for posting/submitting assignments and giving feedback.
 
 ### Posit Cloud
 
-We will be using the Python and R programming languages as a computational tool for some assignments. This tool is free and open-source. We will use the Posit Cloud service.
+We will be using the Python programming language as a computational tool for some assignments. This tool is free and open-source. We will use the Posit Cloud service.
 
 * [Posit Cloud](https://login.posit.cloud/login?redirect=%2F){target="_blank"} is an online computing environment that supports computations in Python.
 
@@ -95,15 +95,11 @@ We will be using the Python and R programming languages as a computational tool 
 
 * [Jupyter](https://jupyter.org/){target="_blank"} is an interactive computing environment that lets you combine live code, math, visualizations, and narrative text for exploring, documenting, and sharing mathematical analyses and simulations.
 
-* [R](https://www.r-project.org/){target="_blank"} is a programming language and environment used for statistical analysis, data visualization, and data-driven research.
-
-* [R Studio](https://posit.co/download/rstudio-desktop/){target="_blank"} is an environment that makes it easier to write, run, and manage R code for data analysis and visualization.
-
 > Create a free account at [Posit Cloud Sign-Up](https://login.posit.cloud/register?redirect=%2F){target="_blank"} using your UP email. Note that you must use your UP email for me to add you into the course’s workspace in Posit Cloud. You will receive an email inviting you into the workspace at the first week of the semester.
 
-If you'd like to set up Python and R on your own computer, start by installing [Python](https://www.python.org/){target="_blank"} and [R](https://cran.r-project.org/){target="_blank"}, then install [Jupyter](https://jupyter.org/){target="_blank"} and [R Studio](https://posit.co/download/rstudio-desktop/){target="_blank"} to run and share code interactively. Feel free to reach out if you'd like help with any step!
+If you'd like to set up Python on your own computer, start by installing [Python](https://www.python.org/){target="_blank"}, then install [Jupyter](https://jupyter.org/){target="_blank"} to run and share code interactively. Feel free to reach out if you'd like help with any step!
 
-> Python and R instructions and materials will be provided ad hoc.
+> Python instructions and materials will be provided ad hoc.
 
 <br>
 
@@ -253,7 +249,7 @@ Your work must be labeled correctly and clearly written. Homework, worksheets, a
 
 ### Worksheets
 
-There will be worksheets every class day except for exam weeks. The purpose of the worksheets is for in-class group work and activities, and it will include instructions on how to use Python or R for Probability.
+There will be worksheets every class day except for exam weeks. The purpose of the worksheets is for in-class group work and activities, and it will include instructions on how to use Python for Probability.
 
 > You need to submit your worksheet individually by end-of-class or end-of-day. Your name must exist in your worksheet and the names of your collaborators.
 

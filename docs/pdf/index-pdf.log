@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.11.4)  24 AUG 2026 08:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.11.4)  24 AUG 2026 12:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -611,6 +611,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [4]
+ignored error: Infinite glue shrinkage found in box being split
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -618,9 +619,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[5]
+[5{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 4
-76.
+72.
 (c:/texlive/2025/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -631,7 +632,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[6{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}]
+[6]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -729,10 +730,10 @@ onts/type1/public/lm/lmr8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm
 xlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2025/texmf-d
 ist/fonts/type1/public/lm/lmsy8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/pub
 lic/lm/lmtt10.pfb>
-Output written on index-pdf.pdf (15 pages, 329795 bytes).
+Output written on index-pdf.pdf (15 pages, 329521 bytes).
 PDF statistics:
- 427 PDF objects out of 1000 (max. 8388607)
- 381 compressed objects within 4 object streams
+ 423 PDF objects out of 1000 (max. 8388607)
+ 377 compressed objects within 4 object streams
  83 named destinations out of 1000 (max. 500000)
  31169 words of extra memory for PDF output out of 35830 (max. 10000000)
 
