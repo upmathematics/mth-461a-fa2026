@@ -237,33 +237,33 @@ The ranking indicates the relative importance of each assignment: Rank 1 is the 
 
 ### Submission Guidelines
 
-> You need to submit all assignments online through Canvas.
+> You need to submit all assignments on Canvas.
 >   
->   * Worksheets must be in a single `.pdf` file.
->   * Homework or Exams must be in a single `.pdf` file along with supplementary Python code (`.py` or `.ipynb`) if any.
+>   * Your work must be clearly handwritten and labeled correctly.
+>   * Worksheets, Homework, and Exams must be in a single `.pdf` file.
 
-Your work must be labeled correctly and clearly written. Homework, worksheets, and exams can be electronically hand-written or typed but must be uploaded to Canvas as a single `.pdf` file. Here are additional submission rules:
+Here are additional submission rules:
 
+* Your work can be electronically handwritten.
 * If you choose to handwrite your answers on paper, scan your document using a scanner app to ensure the text is clear. I recommend using the "Adobe Scan" app, which is available for both Android and iOS.
-* If the assignment involves (or it requires you to show) a Python coding component, you must include all relevant Python code files that generated all outputs, plots, and analysis. Your Python code must be properly documented or with comments.
 
 ### Worksheets
 
-There will be worksheets every class day except for exam weeks. The purpose of the worksheets is for in-class group work and activities, and it will include instructions on how to use Python for Probability.
+There will be worksheets every class day except for exam weeks. The purpose of the worksheets is for in-class group work and activities, and it will include ad hoc instructions on how to use Python for Probability.
 
 > You need to submit your worksheet individually by end-of-class or end-of-day. Your name must exist in your worksheet and the names of your collaborators.
 
+Worksheets are marked mostly on completion, and partially on correctness. It will be marked pass, fail, or absent, there will no detailed feedback on worksheets, and no opportunities for revisions and make-up.
+
 Here are the rules for worksheets:
 
-* You must work on your worksheet in class -at least the majority of it- in order for it to be credited.
-* If you are absent on the day the worksheet is assigned, then it will be marked as absent for that particular worksheet.
-* You may submit/re-submit absent marked worksheets at any time during the semester through email for consideration. The outcome will be decided according to my discretion at the end of the semester.
-
-Worksheets are marked mostly on completion, and partially on correctness. It will be marked pass, fail, or absent, there will no detailed feedback on worksheets, and no opportunities for revisions and make-up.
+* You must work on your worksheet in class —at least the majority of it— in order for it to be credited.
+* If you are absent in class on the day the worksheet is assigned, then it will be marked as absent for that particular worksheet, regardless of whether you worked on it or not.
+* You may submit/resubmit absent marked worksheets at any time during the semester through email for consideration. The outcome will be decided according to my discretion at the end of the semester.
 
 ### Homeworks
 
-Homeworks are assigned every Monday, except for exam days. The purpose of the homework is to provide practice with problems, and it will include tasks that involve Python and/or R.
+Homeworks are assigned every Tuesday, except for exam days. The purpose of the homework is to provide practice with problems.
 
 > You must submit your homework individually by the prescribed deadline.
 
@@ -486,10 +486,10 @@ You are "required" to read the materials, and are strongly encouraged to activel
 |  | W 8/26 | $\rightarrow$ Probability Axioms<br>$\rightarrow$ Interpreting Probability |
 |  | F 8/28 | $\rightarrow$ Sample Spaces<br>$\rightarrow$ Events |
 | **2** | M 8/31 | $\rightarrow$ Basic Counting<br>$\rightarrow$ Mathematical Proofs |
-|  | W 9/2 | $\rightarrow$ Advanced Counting<br>$\rightarrow$ Probability Definition |
+|  | W 9/2 | $\rightarrow$ Advanced Counting<br>$\rightarrow$ Probability Properties |
 |  | F 9/4 | $\rightarrow$ Using Counting to Solve Probability Problems |
 | **3** | M 9/7 | _Labor Day_ (offices closed, no classes) |
-|  | W 9/9 | $\rightarrow$ Dependent and Independent Events<br>$\rightarrow$ Conditional Probability Definition |
+|  | W 9/9 | $\rightarrow$ Dependent and Independent Events<br>$\rightarrow$ Conditional Probability |
 |  | F 9/11 | $\rightarrow$ Introduction to Bayes' Theorem<br>$\rightarrow$ Law of Total Probability |
 | **4** | M 9/14 | $\rightarrow$ Using Bayes' Rule to Solve Probability Problems |
 |  | W 9/16 | $\rightarrow$ Discrete Random Variables<br>$\rightarrow$ Probability Mass Functions |
@@ -550,10 +550,10 @@ The "Read" column in the table below contains page numbers (Pg.) or chapters (Ch
 | Basic Counting | Ch. 1.4 @blitzstein2019introduction |
 | Mathematical Proofs | Ch. 1.5 @blitzstein2019introduction |
 | Advanced Counting | - |
-| Probability Definition | Ch. 1.6 @blitzstein2019introduction |
+| Probability Properties | Ch. 1.6 @blitzstein2019introduction |
 | Using Counting to Solve Probability Problems | - |
 | Dependent and Independent Events | Ch. 2.1 & 2.5 @blitzstein2019introduction |
-| Conditional Probability Definition | Ch. 2.2 @blitzstein2019introduction |
+| Conditional Probability | Ch. 2.2 @blitzstein2019introduction |
 | Introduction to Bayes’ Theorem | Ch. 2.3 @blitzstein2019introduction |
 | Law of Total Probability | - |
 | Using Bayes’ Rule to Solve Probability Problems | - |

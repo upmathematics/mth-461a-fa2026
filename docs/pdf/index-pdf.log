@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.11.4)  24 AUG 2026 12:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.11.4)  28 AUG 2026 10:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -621,7 +621,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [5{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 4
-72.
+74.
 (c:/texlive/2025/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -682,6 +682,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [12]
+ignored error: Infinite glue shrinkage found in box being split
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -715,11 +716,11 @@ L3 programming layer <2025-10-24>
 Here is how much of TeX's memory you used:
  15077 strings out of 467537
  234960 string characters out of 5423704
- 747203 words of memory out of 5000000
+ 750202 words of memory out of 5000000
  43525 multiletter control sequences out of 15000+600000
  683791 words of font info for 150 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 83i,12n,93p,1246b,616s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 83i,11n,93p,1246b,616s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2025
 /texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2025/texmf-dist/fonts/
 type1/public/lm/lmbxo10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/l
@@ -730,7 +731,7 @@ onts/type1/public/lm/lmr8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm
 xlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2025/texmf-d
 ist/fonts/type1/public/lm/lmsy8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/pub
 lic/lm/lmtt10.pfb>
-Output written on index-pdf.pdf (15 pages, 329521 bytes).
+Output written on index-pdf.pdf (15 pages, 328330 bytes).
 PDF statistics:
  423 PDF objects out of 1000 (max. 8388607)
  377 compressed objects within 4 object streams
