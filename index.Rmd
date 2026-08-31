@@ -253,13 +253,13 @@ There will be worksheets every class day except for exam weeks. The purpose of t
 
 > You need to submit your worksheet individually by end-of-class or end-of-day. Your name must exist in your worksheet and the names of your collaborators.
 
-Worksheets are marked mostly on completion, and partially on correctness. It will be marked pass, fail, or absent, there will no detailed feedback on worksheets, and no opportunities for revisions and make-up.
+Worksheets will be marked mostly on completion, and partially on correctness with marks "Complete", "Incomplete", "Missing" (present in class but no work submitted), "Not Missing" (absent in class but work is submitted), or "Absent" (absent in class and no work submitted). There will be no detailed feedback on worksheets, and no opportunities for revisions and make-up.
 
 Here are the rules for worksheets:
 
 * You must work on your worksheet in class —at least the majority of it— in order for it to be credited.
-* If you are absent in class on the day the worksheet is assigned, then it will be marked as absent for that particular worksheet, regardless of whether you worked on it or not.
-* You may submit/resubmit absent marked worksheets at any time during the semester through email for consideration. The outcome will be decided according to my discretion at the end of the semester.
+* Only the "Complete" marked worksheets count to the final grade. 
+* You may submit/resubmit worksheets (on Canvas if the assignment is still open or through email) at any time during the semester for consideration. The outcome will be decided according to my discretion at the end of the semester.
 
 ### Homeworks
 
