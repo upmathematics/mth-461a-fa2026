@@ -480,54 +480,7 @@ You are "required" to read the materials, and are strongly encouraged to activel
 
 ## **Topics Schedule**
 
-| **Week** | **Day** | **Topics** |
-|:--:|:--:|:---------------|
-| **1** | M 8/24 | $\rightarrow$ Orientation<br>$\rightarrow$ Calculus Review<br>$\rightarrow$ Discrete Structures "Review"<br>$\rightarrow$ Using Technology for Calculus and Discrete Structures |
-|  | W 8/26 | $\rightarrow$ Probability Axioms<br>$\rightarrow$ Interpreting Probability |
-|  | F 8/28 | $\rightarrow$ Sample Spaces<br>$\rightarrow$ Events |
-| **2** | M 8/31 | $\rightarrow$ Basic Counting<br>$\rightarrow$ Mathematical Proofs |
-|  | W 9/2 | $\rightarrow$ Advanced Counting<br>$\rightarrow$ Probability Properties |
-|  | F 9/4 | $\rightarrow$ Using Counting to Solve Probability Problems |
-| **3** | M 9/7 | _Labor Day_ (offices closed, no classes) |
-|  | W 9/9 | $\rightarrow$ Dependent and Independent Events<br>$\rightarrow$ Conditional Probability |
-|  | F 9/11 | $\rightarrow$ Introduction to Bayes' Theorem<br>$\rightarrow$ Law of Total Probability |
-| **4** | M 9/14 | $\rightarrow$ Using Bayes' Rule to Solve Probability Problems |
-|  | W 9/16 | $\rightarrow$ Discrete Random Variables<br>$\rightarrow$ Probability Mass Functions |
-|  | F 9/18 | $\rightarrow$ Discrete Cumulative Distribution Functions |
-| **5** | M 9/21 | $\rightarrow$ Using Technology to Simulate Random Sampling |
-|  | W 9/23 | _Review_ |
-|  | Th 9/24 to F 9/25 | **Exam 1** on Topics from **Weeks 1, 2, and 3** (No Class Session on F 9/25) |
-| **6** | M 9/28 | $\rightarrow$ Continuous Random Variables<br>$\rightarrow$ Probability Density Functions |
-|  | W 9/30 | $\rightarrow$ Continuous Cumulative Distribution Functions |
-|  | F 10/2 | $\rightarrow$ Convolutions |
-| **7** | M 10/5 | $\rightarrow$ Functions of Random Variables<br>$\rightarrow$ Independence of Random Variables |
-|  | W 10/7 |  $\rightarrow$ Expectation Definition<br>$\rightarrow$ Properties of the Expected Value |
-|  | F 10/9 | $\rightarrow$ 1D Law of Unconscious Statistician |
-| **8** |M 10/12 | _Fall Vacation_ |
-|  | W 10/14 | _Fall Vacation_ |
-|  | F 10/16 | _Fall Vacation_ |
-| **9** | M 10/19 | $\rightarrow$ Using Technology to Estimate Expected Values |
-|  | W 10/21 | _Review_ |
-|  | Th 10/22 to F 10/23 | **Exam 2** on Topics from **Weeks 4, 6, and 7** (No Class Session on F 10/23) |
-| **10** | M 10/26 | $\rightarrow$ Moments Definition<br>$\rightarrow$ Moments Interpretation |
-|  | W 10/28 | $\rightarrow$ Central Moments<br>$\rightarrow$ Variance |
-|  | F 10/30 | $\rightarrow$ Moment Generating Functions |
-| **11** | M 11/2 | $\rightarrow$ Joint Distributions<br>$\rightarrow$ Marginal Distributions |
-|  | W 11/4 | $\rightarrow$ Conditional Distributions |
-|  | F 11/6 | $\rightarrow$ 2D Law of Unconscious Statistician |
-| **12** | M 11/9 | $\rightarrow$ Covariance<br>$\rightarrow$ Correlation |
-|  | W 11/11 | $\rightarrow$ Transformations of Random Variables<br>$\rightarrow$ 1D Change of Variables |
-|  | F 11/13 | $\rightarrow$ Conditional Expectation<br>$\rightarrow$ Properties of Conditional Expectation  |
-| **13** | M 11/16 | $\rightarrow$ Using Technology to Estimate Probability Distributions |
-|  | W 11/18 | _Review_ |
-|  | Th 11/19 to F 11/20 | **Exam 3** on Topics from **Weeks 10, 11 and 12** (No Class Session on F 11/20) |
-| **14** | M 11/23 | $\rightarrow$ Introduction to Markov Chains<br>$\rightarrow$ Markov Property |
-|  | W 11/25 | $\rightarrow$ Transition Matrix<br>$\rightarrow$ Stationary Distribution |
-|  | F 11/27 | _Thanksgiving Vacation_ |
-| **15** | M 11/30 | $\rightarrow$ Using Technology to Simulate Markov Chains (Optional)<br>$\rightarrow$ Using Technology to Analyze High-Dimensional Probability Distributions (Optional) |
-|  | W 12/2 | $\rightarrow$ Introduction to Statistical Learning (Optional)<br>$\rightarrow$ Bias-Variance Trade-Off (Optional) |
-|  | F 12/4 | $\rightarrow$ Introduction to Language Models (Optional)<br>$\rightarrow$ N-Gram Model (Optional)<br>$\rightarrow$ Word Embeddings (Optional) |
-| **16** | M 12/7 to Th 12/10 | **Cumulative Exam** (Topics from **Exams 1, 2, \& 3** including Topics from **Week 14**) |
+***This section is under review for amendments.***
 
 <br>
 
