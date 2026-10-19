@@ -372,19 +372,15 @@ Here are the rules of make-up exams:
 
 ### Final Exam
 
-The final exam is an *unconventionally conventional* exam, and it will be cumulative. 
+The "final exam" will be a standard exam with the same rules and guidelines with the following exceptions:
 
-Here are the rules for the final exam:
-
-  * The final exam must take place in person at its scheduled time and location.
-  * All notes, books, and technology are not allowed during the exam.
   * Retakes and make-up for previous exams are not allowed during final exam days.
   * You need to have at least a mark of "A" to maintain your current standing in this course.
   * Retakes and make-up are not possible for the final exam.
 
-> The final exam schedule and location are:
+> The final exam week is on:
 >
->   * **Section A:** December 7, Monday, 1:30 PM - 3:30 PM, Dundon-Berchtold 235
+>   * Monday 12/7 to Th 12/10
 
 <br>
 
@@ -480,7 +476,54 @@ You are "required" to read the materials, and are strongly encouraged to activel
 
 ## **Topics Schedule**
 
-***This section is under review for amendments.***
+| **Week** | **Day** | **Topics** |
+|:--:|:--:|:---------------|
+| **1** | M 8/24 | $\rightarrow$ Orientation<br>$\rightarrow$ Calculus Review<br>$\rightarrow$ Discrete Structures "Review"<br>$\rightarrow$ Using Technology for Calculus and Discrete Structures |
+|  | W 8/26 | $\rightarrow$ Probability Axioms<br>$\rightarrow$ Interpreting Probability |
+|  | F 8/28 | $\rightarrow$ Sample Spaces<br>$\rightarrow$ Events |
+| **2** | M 8/31 | $\rightarrow$ Basic Counting<br>$\rightarrow$ Mathematical Proofs |
+|  | W 9/2 | $\rightarrow$ Advanced Counting<br>$\rightarrow$ Probability Properties |
+|  | F 9/4 | $\rightarrow$ Using Counting to Solve Probability Problems |
+| **3** | M 9/7 | _Labor Day_ (offices closed, no classes) |
+|  | W 9/9 | $\rightarrow$ Dependent and Independent Events<br>$\rightarrow$ Conditional Probability |
+|  | F 9/11 | $\rightarrow$ Introduction to Bayes' Theorem<br>$\rightarrow$ Law of Total Probability |
+| **4** | M 9/14 | $\rightarrow$ Using Bayes' Rule to Solve Probability Problems |
+|  | W 9/16 | $\rightarrow$ Discrete Random Variables<br>$\rightarrow$ Probability Mass Functions |
+|  | F 9/18 | $\rightarrow$ Discrete Cumulative Distribution Functions |
+| **5** | M 9/21 | *TBD* |
+|  | W 9/23 | _Review_ |
+|  | Th 9/24 to F 9/25 | **Exam 1** on Topics from **Weeks 1, 2, 3, and 4** (No Class Session on F 9/25) |
+| **6** | M 9/28 | *TBD* |
+|  | W 9/30 | *TBD* |
+|  | F 10/2 | *TBD* |
+| **7** | M 10/5 | *TBD* |
+|  | W 10/7 |  $\rightarrow$ Expectation Definition<br>$\rightarrow$ Properties of the Expected Value |
+|  | F 10/9 | *TBD* |
+| **8** |M 10/12 | _Fall Vacation_ |
+|  | W 10/14 | _Fall Vacation_ |
+|  | F 10/16 | _Fall Vacation_ |
+| **9** | M 10/19 | *TBD* |
+|  | W 10/21 | *TBD* |
+|  | F 10/23 | *TBD* |
+| **10** | M 10/26 | *TBD* |
+|  | W 10/28 | *TBD* |
+|  | F 10/30 | *TBD* |
+| **11** | M 11/2 | *TBD* |
+|  | W 11/4 | _Review_ |
+|  | Th 11/5 to F 11/6 | **Exam 2** on Topics from **Weeks 6, 7, 9, and 10** (No Class Session on F 11/6) |
+| **12** | M 11/9 | *TBD* |
+|  | W 11/11 | *TBD* |
+|  | F 11/13 | *TBD* |
+| **13** | M 11/16 | *TBD* |
+|  | W 11/18 | *TBD* |
+|  | F 11/20 | *TBD* |
+| **14** | M 11/23 | *TBD* |
+|  | W 11/25 | *TBD* |
+|  | F 11/27 | _Thanksgiving Vacation_ |
+| **15** | M 11/30 | *TBD* |
+|  | W 12/2 | *TBD* |
+|  | F 12/4 | *TBD* |
+| **16** | M 12/7 to Th 12/10 | **Exam 3** on Topics from **Weeks 12, 13, 14, and 15** |
 
 <br>
 
