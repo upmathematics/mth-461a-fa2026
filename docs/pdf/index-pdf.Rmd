@@ -387,7 +387,7 @@ The "final exam" will be a standard exam with the same rules and guidelines with
 
 > The final exam week is on:
 >
->   * Monday 12/7 to Th 12/10
+>   * Monday 12/7 to Thursday 12/10
 
 <br>
 
@@ -528,7 +528,7 @@ You are "required" to read the materials, and are strongly encouraged to activel
 |  | W 11/25 | *TBD* |
 |  | F 11/27 | _Thanksgiving Vacation_ |
 | **15** | M 11/30 | *TBD* |
-|  | W 12/2 | *TBD* |
+|  | W 12/2 | _Review_ |
 |  | F 12/4 | *TBD* |
 | **16** | M 12/7 to Th 12/10 | **Exam 3** on Topics from **Weeks 12, 13, 14, and 15** |
 
