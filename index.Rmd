@@ -497,7 +497,7 @@ You are "required" to read the materials, and are strongly encouraged to activel
 |  | W 9/30 | *TBD* |
 |  | F 10/2 | *TBD* |
 | **7** | M 10/5 | *TBD* |
-|  | W 10/7 |  $\rightarrow$ Expectation Definition<br>$\rightarrow$ Properties of the Expected Value |
+|  | W 10/7 | *TBD* |
 |  | F 10/9 | *TBD* |
 | **8** |M 10/12 | _Fall Vacation_ |
 |  | W 10/14 | _Fall Vacation_ |
@@ -506,7 +506,7 @@ You are "required" to read the materials, and are strongly encouraged to activel
 |  | W 10/21 | *TBD* |
 |  | F 10/23 | *TBD* |
 | **10** | M 10/26 | *TBD* |
-|  | W 10/28 | *TBD* |
+|  | W 10/28 | _No class due to UP Next special schedule_ |
 |  | F 10/30 | *TBD* |
 | **11** | M 11/2 | *TBD* |
 |  | W 11/4 | _Review_ |
